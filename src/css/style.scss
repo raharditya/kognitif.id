@@ -60,10 +60,12 @@ header {
 
 @keyframes center {
   from {
-    top: 48%;
+    // top: 48%;
+    transform: translate3d(-50%, -50%, 0);
   }
   to {
-    top: 51%;
+    // top: 51%;
+    transform: translate3d(-50%, -33%, 0);
   }
 }
 @keyframes phone {
@@ -145,6 +147,7 @@ section {
     transform: translate(-50%, -50%);
     animation: center 4s infinite ease-in-out alternate;
     animation-delay: 5s;
+    animation-timing-function: ease-in-out;
   }
   .img-phone {
     position: absolute;

@@ -74,19 +74,23 @@ header h2 .text-show {
 
 @-webkit-keyframes center {
   from {
-    top: 48%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
   }
   to {
-    top: 51%;
+    -webkit-transform: translate3d(-50%, -33%, 0);
+            transform: translate3d(-50%, -33%, 0);
   }
 }
 
 @keyframes center {
   from {
-    top: 48%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
   }
   to {
-    top: 51%;
+    -webkit-transform: translate3d(-50%, -33%, 0);
+            transform: translate3d(-50%, -33%, 0);
   }
 }
 
@@ -260,6 +264,8 @@ section .img-center {
           animation: center 4s infinite ease-in-out alternate;
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 
 section .img-phone {
