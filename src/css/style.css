@@ -47,6 +47,7 @@ nav .line {
 }
 
 header {
+  visibility: hidden;
   height: 35vh;
   display: -webkit-box;
   display: -ms-flexbox;

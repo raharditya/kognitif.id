@@ -15,6 +15,7 @@ import { ReactComponent as Rss } from "./assets/rss.svg";
 import { TweenLite } from "gsap/gsap-core";
 
 export default function Content() {
+  let header = useRef(null);
   let mainTitle = useRef(null);
 
   let navLine = useRef(null);
@@ -25,6 +26,7 @@ export default function Content() {
   let line3 = useRef(null);
 
   useEffect(() => {
+    TweenLite.to(header, 0, { css: { visibility: "visible" } });
     TweenLite.staggerFrom(
       [navLine, navYear],
       1,
@@ -32,14 +34,15 @@ export default function Content() {
         scaleX: 0,
         xPercent: -60,
         ease: Power3.easeOut,
-        delay: 0.5,
+        delay: 0.8,
       },
       0.2
     );
     TweenMax.from(mainTitle, 2, {
       opacity: 0,
-      yPercent: 20,
+      yPercent: 100,
       ease: Power3.easeOut,
+      delay: 0.3,
     });
     TweenMax.staggerFrom(
       [line1, line2, line3],
@@ -60,7 +63,7 @@ export default function Content() {
       </nav>
 
       <div class="desktop-flex">
-        <header className="main-wrapper">
+        <header className="main-wrapper" ref={(el) => (header = el)}>
           <h1 className="main-title" ref={(el) => (mainTitle = el)}>
             Kognitif.id
           </h1>
