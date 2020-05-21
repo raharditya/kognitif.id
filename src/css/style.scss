@@ -11,7 +11,8 @@ body {
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
   .main-title {
-    font-family: "Vollkorn", serif;
+    font-family: "Philosopher", serif;
+    letter-spacing: 1px;
   }
   .emphasis-text {
     color: #ff6464;
@@ -47,29 +48,100 @@ header {
 
   h2 {
     font-size: 2.5em;
+    height: 55px;
+    position: relative;
+    overflow: hidden;
+    .text-show {
+      position: absolute;
+    }
+  }
+}
+
+@keyframes center {
+  from {
+    top: 48%;
+  }
+  to {
+    top: 51%;
+  }
+}
+@keyframes phone {
+  from {
+    top: 20%;
+  }
+  to {
+    top: 22%;
+  }
+}
+@keyframes www {
+  from {
+    top: 5%;
+  }
+  to {
+    top: 6%;
+  }
+}
+@keyframes topPaper {
+  from {
+    top: 15%;
+  }
+  to {
+    top: 16%;
+  }
+}
+@keyframes water2 {
+  from {
+    top: 50%;
+  }
+  to {
+    top: 52%;
+  }
+}
+@keyframes laptop {
+  from {
+    top: 60%;
+  }
+  to {
+    top: 64%;
+  }
+}
+@keyframes water3 {
+  from {
+    bottom: 20%;
+  }
+  to {
+    bottom: 22%;
   }
 }
 
 section {
   height: 45vh;
+  max-width: 520px;
+  margin: auto;
   position: relative;
   overflow: hidden;
 
   .img-center {
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
+    animation: center 4s infinite ease-in-out alternate;
+    animation-delay: 5s;
   }
   .img-phone {
     position: absolute;
     top: 20%;
     left: 5%;
+    animation: phone 4s infinite ease-in-out alternate;
+    animation-delay: 7s;
   }
   .img-www {
     position: absolute;
     top: 5%;
     left: 30%;
+    animation: www 3s infinite ease-in-out alternate;
+    animation-delay: 6s;
   }
   .img-water-1 {
     position: absolute;
@@ -80,16 +152,21 @@ section {
     position: absolute;
     top: 15%;
     right: 5%;
+    animation: topPaper 5s infinite ease-in-out alternate;
+    animation-delay: 8s;
   }
   .img-water-2 {
     position: absolute;
     top: 50%;
     right: 20%;
+    animation: water2 2s infinite ease-in-out alternate;
   }
   .img-laptop {
     position: absolute;
     top: 60%;
     right: -3%;
+    animation: laptop 4s infinite ease-in-out alternate;
+    animation-delay: 7s;
   }
   .img-bottom-paper {
     position: absolute;
@@ -100,6 +177,8 @@ section {
     position: absolute;
     bottom: 20%;
     left: 25%;
+    animation: water3 6s infinite ease-in-out alternate;
+    animation-delay: 6s;
   }
   .img-rss {
     position: absolute;
@@ -113,6 +192,15 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@keyframes scrollUp {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(-20px);
+  }
 }
 
 // Small devices (landscape phones, 576px and up)

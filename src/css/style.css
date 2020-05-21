@@ -14,7 +14,8 @@ body {
 }
 
 body .main-title {
-  font-family: "Vollkorn", serif;
+  font-family: "Philosopher", serif;
+  letter-spacing: 1px;
 }
 
 body .emphasis-text {
@@ -61,32 +62,179 @@ header {
 
 header h2 {
   font-size: 2.5em;
+  height: 55px;
+  position: relative;
+  overflow: hidden;
+}
+
+header h2 .text-show {
+  position: absolute;
+}
+
+@-webkit-keyframes center {
+  from {
+    top: 48%;
+  }
+  to {
+    top: 51%;
+  }
+}
+
+@keyframes center {
+  from {
+    top: 48%;
+  }
+  to {
+    top: 51%;
+  }
+}
+
+@-webkit-keyframes phone {
+  from {
+    top: 20%;
+  }
+  to {
+    top: 22%;
+  }
+}
+
+@keyframes phone {
+  from {
+    top: 20%;
+  }
+  to {
+    top: 22%;
+  }
+}
+
+@-webkit-keyframes www {
+  from {
+    top: 5%;
+  }
+  to {
+    top: 6%;
+  }
+}
+
+@keyframes www {
+  from {
+    top: 5%;
+  }
+  to {
+    top: 6%;
+  }
+}
+
+@-webkit-keyframes topPaper {
+  from {
+    top: 15%;
+  }
+  to {
+    top: 16%;
+  }
+}
+
+@keyframes topPaper {
+  from {
+    top: 15%;
+  }
+  to {
+    top: 16%;
+  }
+}
+
+@-webkit-keyframes water2 {
+  from {
+    top: 50%;
+  }
+  to {
+    top: 52%;
+  }
+}
+
+@keyframes water2 {
+  from {
+    top: 50%;
+  }
+  to {
+    top: 52%;
+  }
+}
+
+@-webkit-keyframes laptop {
+  from {
+    top: 60%;
+  }
+  to {
+    top: 64%;
+  }
+}
+
+@keyframes laptop {
+  from {
+    top: 60%;
+  }
+  to {
+    top: 64%;
+  }
+}
+
+@-webkit-keyframes water3 {
+  from {
+    bottom: 20%;
+  }
+  to {
+    bottom: 22%;
+  }
+}
+
+@keyframes water3 {
+  from {
+    bottom: 20%;
+  }
+  to {
+    bottom: 22%;
+  }
 }
 
 section {
   height: 45vh;
+  max-width: 520px;
+  margin: auto;
   position: relative;
   overflow: hidden;
 }
 
 section .img-center {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-animation: center 4s infinite ease-in-out alternate;
+          animation: center 4s infinite ease-in-out alternate;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 
 section .img-phone {
   position: absolute;
   top: 20%;
   left: 5%;
+  -webkit-animation: phone 4s infinite ease-in-out alternate;
+          animation: phone 4s infinite ease-in-out alternate;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
 }
 
 section .img-www {
   position: absolute;
   top: 5%;
   left: 30%;
+  -webkit-animation: www 3s infinite ease-in-out alternate;
+          animation: www 3s infinite ease-in-out alternate;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
 }
 
 section .img-water-1 {
@@ -99,18 +247,28 @@ section .img-top-paper {
   position: absolute;
   top: 15%;
   right: 5%;
+  -webkit-animation: topPaper 5s infinite ease-in-out alternate;
+          animation: topPaper 5s infinite ease-in-out alternate;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
 }
 
 section .img-water-2 {
   position: absolute;
   top: 50%;
   right: 20%;
+  -webkit-animation: water2 2s infinite ease-in-out alternate;
+          animation: water2 2s infinite ease-in-out alternate;
 }
 
 section .img-laptop {
   position: absolute;
   top: 60%;
   right: -3%;
+  -webkit-animation: laptop 4s infinite ease-in-out alternate;
+          animation: laptop 4s infinite ease-in-out alternate;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
 }
 
 section .img-bottom-paper {
@@ -123,6 +281,10 @@ section .img-water-3 {
   position: absolute;
   bottom: 20%;
   left: 25%;
+  -webkit-animation: water3 6s infinite ease-in-out alternate;
+          animation: water3 6s infinite ease-in-out alternate;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
 }
 
 section .img-rss {
@@ -142,6 +304,28 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@-webkit-keyframes scrollUp {
+  from {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  to {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+@keyframes scrollUp {
+  from {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  to {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
 }
 
 @media (min-width: 992px) {
