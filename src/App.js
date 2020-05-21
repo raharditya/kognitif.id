@@ -1,13 +1,12 @@
 import React from "react";
-import "./App.css";
+import "./css/style.css";
+
+import Content from "./Content";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>kognitif.id</h1>
-        <p>Initial Commit</p>
-      </header>
+      <Content />
     </div>
   );
 }
