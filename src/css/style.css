@@ -179,6 +179,28 @@ header h2 .text-show {
   }
 }
 
+@-webkit-keyframes bottomPaper {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+}
+
+@keyframes bottomPaper {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+}
+
 @-webkit-keyframes water3 {
   from {
     bottom: 20%;
@@ -194,6 +216,28 @@ header h2 .text-show {
   }
   to {
     bottom: 22%;
+  }
+}
+
+@-webkit-keyframes rss {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+}
+
+@keyframes rss {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
   }
 }
 
@@ -275,6 +319,10 @@ section .img-bottom-paper {
   position: absolute;
   bottom: 5%;
   right: 35%;
+  -webkit-animation: bottomPaper 5s infinite ease-in-out alternate;
+          animation: bottomPaper 5s infinite ease-in-out alternate;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
 }
 
 section .img-water-3 {
@@ -291,6 +339,10 @@ section .img-rss {
   position: absolute;
   bottom: 35%;
   left: 10%;
+  -webkit-animation: rss 8s infinite ease-in-out alternate;
+          animation: rss 8s infinite ease-in-out alternate;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
 }
 
 footer {

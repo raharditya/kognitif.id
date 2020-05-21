@@ -1,6 +1,6 @@
-import React, { useRef, useEffect, useState } from "react";
-import { TweenMax, Power3, TimelineLite } from "gsap";
-import { Timeline, Tween } from "react-gsap";
+import React, { useRef, useEffect } from "react";
+import { TweenMax, Power3 } from "gsap";
+import { Tween } from "react-gsap";
 
 import { ReactComponent as Center } from "./assets/center.svg";
 import { ReactComponent as Phone } from "./assets/phone.svg";
@@ -23,8 +23,6 @@ export default function Content() {
   let line1 = useRef(null);
   let line2 = useRef(null);
   let line3 = useRef(null);
-
-  let graphic = useRef(null);
 
   useEffect(() => {
     TweenLite.staggerFrom(
@@ -89,7 +87,7 @@ export default function Content() {
           </div>
         </header>
 
-        <section ref={(el) => (graphic = el)}>
+        <section>
           <Tween
             from={{ y: "-20%", opacity: 0 }}
             duration={4}

@@ -105,12 +105,28 @@ header {
     top: 64%;
   }
 }
+@keyframes bottomPaper {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-12deg);
+  }
+}
 @keyframes water3 {
   from {
     bottom: 20%;
   }
   to {
     bottom: 22%;
+  }
+}
+@keyframes rss {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(12deg);
   }
 }
 
@@ -172,7 +188,10 @@ section {
     position: absolute;
     bottom: 5%;
     right: 35%;
+    animation: bottomPaper 5s infinite ease-in-out alternate;
+    animation-delay: 7s;
   }
+
   .img-water-3 {
     position: absolute;
     bottom: 20%;
@@ -184,6 +203,8 @@ section {
     position: absolute;
     bottom: 35%;
     left: 10%;
+    animation: rss 8s infinite ease-in-out alternate;
+    animation-delay: 6s;
   }
 }
 
