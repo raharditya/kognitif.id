@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
-import { TweenMax, Power3 } from "gsap";
+import { Power3 } from "gsap";
+import { TweenLite } from "gsap/gsap-core";
 import { Tween } from "react-gsap";
 
 import { ReactComponent as Center } from "./assets/center.svg";
@@ -13,13 +14,12 @@ import { ReactComponent as BottomPaper } from "./assets/bottom-paper.svg";
 import { ReactComponent as Water3 } from "./assets/water-3.svg";
 import { ReactComponent as Rss } from "./assets/rss.svg";
 
-import { ReactComponent as LineBottom } from "./assets/mobile-bottom.svg";
+import { ReactComponent as LineBottom } from "./assets/mobile-bottom-1.svg";
 import { ReactComponent as LineTop } from "./assets/mobile-top.svg";
-
-import { TweenLite } from "gsap/gsap-core";
 
 export default function Content() {
   let header = useRef(null);
+  let nav = useRef(null);
   let mainTitle = useRef(null);
 
   let navLine = useRef(null);
@@ -30,7 +30,7 @@ export default function Content() {
   let line3 = useRef(null);
 
   useEffect(() => {
-    TweenLite.to(header, 0, { css: { visibility: "visible" } });
+    TweenLite.staggerTo([header, nav], 0, { css: { visibility: "visible" } });
     TweenLite.staggerFrom(
       [navLine, navYear],
       1,
@@ -42,13 +42,13 @@ export default function Content() {
       },
       0.2
     );
-    TweenMax.from(mainTitle, 2, {
+    TweenLite.from(mainTitle, 2, {
       opacity: 0,
       yPercent: 100,
       ease: Power3.easeOut,
       delay: 0.3,
     });
-    TweenMax.staggerFrom(
+    TweenLite.staggerFrom(
       [line1, line2, line3],
       1.5,
       {
@@ -59,12 +59,13 @@ export default function Content() {
       0.2
     );
   }, []);
+
   return (
     <div className="content-wrapper">
       <div className="line-top">
         <LineTop />
       </div>
-      <nav className="main-wrapper">
+      <nav className="main-wrapper" ref={(el) => (nav = el)}>
         <div className="line" ref={(el) => (navLine = el)}></div>
         <p ref={(el) => (navYear = el)}>2020</p>
       </nav>

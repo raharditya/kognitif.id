@@ -30,15 +30,13 @@ body .line-top {
 body .line-top svg {
   width: 100%;
   height: 100%;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 body .line-bottom {
   position: absolute;
   z-index: -10;
   width: 100vw;
-  bottom: -150px;
+  bottom: 0;
 }
 
 body .line-bottom svg {
@@ -52,6 +50,7 @@ body .line-bottom svg {
 }
 
 nav {
+  visibility: hidden;
   height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
