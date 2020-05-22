@@ -12,6 +12,10 @@ import { ReactComponent as Laptop } from "./assets/laptop.svg";
 import { ReactComponent as BottomPaper } from "./assets/bottom-paper.svg";
 import { ReactComponent as Water3 } from "./assets/water-3.svg";
 import { ReactComponent as Rss } from "./assets/rss.svg";
+
+import { ReactComponent as LineBottom } from "./assets/mobile-bottom.svg";
+import { ReactComponent as LineTop } from "./assets/mobile-top.svg";
+
 import { TweenLite } from "gsap/gsap-core";
 
 export default function Content() {
@@ -56,7 +60,10 @@ export default function Content() {
     );
   }, []);
   return (
-    <div>
+    <div className="content-wrapper">
+      <div className="line-top">
+        <LineTop />
+      </div>
       <nav className="main-wrapper">
         <div className="line" ref={(el) => (navLine = el)}></div>
         <p ref={(el) => (navYear = el)}>2020</p>
@@ -117,6 +124,10 @@ export default function Content() {
           <p>Coming Soon</p>
         </Tween>
       </footer>
+
+      <div className="line-bottom">
+        <LineBottom />
+      </div>
     </div>
   );
 }
