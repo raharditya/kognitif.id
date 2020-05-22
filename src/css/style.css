@@ -102,8 +102,8 @@ header h2 .text-show {
             transform: translate3d(-50%, -50%, 0);
   }
   to {
-    -webkit-transform: translate3d(-50%, -40%, 0);
-            transform: translate3d(-50%, -40%, 0);
+    -webkit-transform: translate3d(-50%, -43%, 0);
+            transform: translate3d(-50%, -43%, 0);
   }
 }
 
@@ -113,98 +113,118 @@ header h2 .text-show {
             transform: translate3d(-50%, -50%, 0);
   }
   to {
-    -webkit-transform: translate3d(-50%, -40%, 0);
-            transform: translate3d(-50%, -40%, 0);
+    -webkit-transform: translate3d(-50%, -43%, 0);
+            transform: translate3d(-50%, -43%, 0);
   }
 }
 
 @-webkit-keyframes phone {
   from {
-    top: 20%;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   to {
-    top: 22%;
+    -webkit-transform: translate3d(0, -10%, 0);
+            transform: translate3d(0, -10%, 0);
   }
 }
 
 @keyframes phone {
   from {
-    top: 20%;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   to {
-    top: 22%;
+    -webkit-transform: translate3d(0, -10%, 0);
+            transform: translate3d(0, -10%, 0);
   }
 }
 
 @-webkit-keyframes www {
   from {
-    top: 5%;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   to {
-    top: 6%;
+    -webkit-transform: translate3d(0, 7%, 0);
+            transform: translate3d(0, 7%, 0);
   }
 }
 
 @keyframes www {
   from {
-    top: 5%;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   to {
-    top: 6%;
+    -webkit-transform: translate3d(0, 7%, 0);
+            transform: translate3d(0, 7%, 0);
   }
 }
 
 @-webkit-keyframes topPaper {
   from {
-    top: 15%;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   to {
-    top: 16%;
+    -webkit-transform: translate3d(0, -8%, 0);
+            transform: translate3d(0, -8%, 0);
   }
 }
 
 @keyframes topPaper {
   from {
-    top: 15%;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   to {
-    top: 16%;
+    -webkit-transform: translate3d(0, -8%, 0);
+            transform: translate3d(0, -8%, 0);
   }
 }
 
 @-webkit-keyframes water2 {
   from {
-    top: 50%;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   to {
-    top: 52%;
+    -webkit-transform: translate3d(0, -17%, 0);
+            transform: translate3d(0, -17%, 0);
   }
 }
 
 @keyframes water2 {
   from {
-    top: 50%;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   to {
-    top: 52%;
+    -webkit-transform: translate3d(0, -17%, 0);
+            transform: translate3d(0, -17%, 0);
   }
 }
 
 @-webkit-keyframes laptop {
   from {
-    top: 60%;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   to {
-    top: 64%;
+    -webkit-transform: translate3d(0, 15%, 0);
+            transform: translate3d(0, 15%, 0);
   }
 }
 
 @keyframes laptop {
   from {
-    top: 60%;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   to {
-    top: 64%;
+    -webkit-transform: translate3d(0, 15%, 0);
+            transform: translate3d(0, 15%, 0);
   }
 }
 
@@ -232,19 +252,23 @@ header h2 .text-show {
 
 @-webkit-keyframes water3 {
   from {
-    bottom: 20%;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   to {
-    bottom: 22%;
+    -webkit-transform: translate3d(0, 50%, 0);
+            transform: translate3d(0, 50%, 0);
   }
 }
 
 @keyframes water3 {
   from {
-    bottom: 20%;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   to {
-    bottom: 22%;
+    -webkit-transform: translate3d(0, 50%, 0);
+            transform: translate3d(0, 50%, 0);
   }
 }
 
