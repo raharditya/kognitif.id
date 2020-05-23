@@ -272,6 +272,11 @@ footer {
       display: none;
     }
   }
+  .desktop-flex {
+    section {
+      overflow: visible;
+    }
+  }
 }
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {

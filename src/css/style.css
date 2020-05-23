@@ -452,6 +452,9 @@ footer {
   body .line-bottom {
     display: none;
   }
+  .desktop-flex section {
+    overflow: visible;
+  }
 }
 
 @media (min-width: 992px) {
