@@ -1,9 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Serif:wght@700&display=swap");
+
+$THEME-BG: #eff8ff;
+$MAIN-COLOR: #8370ed;
+$HEADING-COLOR: #2f2563;
+$NAVBAR-ACTIVE: #0c87a3;
+$TEXT-BLACK: #3a3939;
+$FADED-TEXT: #544747;
+$PLACEHOLDER: #c4c4c4;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.heading-serif {
+  font-family: "Noto Serif", serif;
+  color: $HEADING-COLOR;
 }
 
 a {
