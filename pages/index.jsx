@@ -9,20 +9,24 @@ export default function Home() {
       </Head>
 
       <header>
-        <div className="">
-          <div className="">
-            <h2 className="">KOGNITIF WEB DEVELOPMENT</h2>
-            <h1 className="main-title">Bawa Bisnismu ke Era Modern</h1>
+        <div>
+          <div className="head-body-1">
+            <h2 className="body sub-title">KOGNITIF WEB DEVELOPMENT</h2>
+            <h1 className="heading-serif main-title">Bawa Bisnismu ke <br/> Era Modern</h1>
             <p>
             We’ve got a vast code base of modules and ready-made solutions
-  that speed up the development process and cut your expenses.
+            that speed up the development process and cut your expenses.
             </p>
-            <button> View Portofolio </button>
-            <button> Hire Us! </button>
+            <button className="heading-bold btn-secondary"> View Portofolio </button>
+            <button className=" heading-bold btn-primary"> Hire Us! </button>
           </div>
-          <img src="" alt=""/>
+          <div className="head-body-2"></div>
         </div>
       </header>
+
+      <section>
+        
+      </section>
 
       <section>
         <h3>Kenapa kamu butuh website?</h3>
