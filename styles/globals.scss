@@ -49,7 +49,6 @@ a {
 }
 
 .section-header {
-  text-align: center;
   margin: 3rem 0;
 
   .section-category {
@@ -100,6 +99,15 @@ a {
 
 .home-faq {
   display: flex;
+
+  .faq-header {
+    flex: 1.5;
+    margin-right: 3rem;
+  }
+
+  .faq-content {
+    flex: 2;
+  }
 }
 
 /* MEDIA QUERIES */
