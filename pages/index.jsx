@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Collapsible from "react-collapsible";
+import BottomCta from "../components/BottomCta";
 import FaqContent from "../components/FaqContent";
 import FaqTitle from "../components/FaqTitle";
 import SectionHeader from "../components/SectionHeader";
@@ -15,6 +16,8 @@ export default function Home() {
       <header></header>
 
       <section>
+        {/* BAGIAN KENAPA BUTUH WEBSITE */}
+
         <SectionHeader
           sectionTitle="Kenapa kamu butuh website?"
           category="MARKETING"
@@ -37,12 +40,16 @@ export default function Home() {
       </section>
 
       <section className="home-solution">
+        {/* BAGIAN KAMI SIAP MENJADI SOLUSI */}
+
         <h2>Kognitif siap menjadi solusi websitemu!</h2>
       </section>
 
       <section style={{ height: "400px" }}></section>
 
       <section className="home-faq">
+        {/* BAGIAN FAQ */}
+
         <div className="faq-header">
           <SectionHeader
             sectionTitle="Frequently Asked Questions"
@@ -82,6 +89,10 @@ export default function Home() {
             <FaqContent content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." />
           </Collapsible>
         </div>
+      </section>
+
+      <section>
+        <BottomCta />
       </section>
     </div>
   );

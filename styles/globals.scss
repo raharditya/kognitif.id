@@ -7,6 +7,7 @@ $NAVBAR-ACTIVE: #0c87a3;
 $TEXT-BLACK: #3a3939;
 $FADED-TEXT: #544747;
 $PLACEHOLDER: #c4c4c4;
+$FOOTER-COPYRIGHT: #e5f2fc;
 
 html,
 body {
@@ -119,7 +120,7 @@ a {
 .is-open {
   div {
     background-color: $THEME-BG;
-    transition: background-color 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
   }
 
   img {
@@ -129,6 +130,11 @@ a {
 }
 
 .is-closed {
+  div {
+    background-color: white;
+    transition: all 200ms ease-in-out;
+  }
+
   img {
     transform: rotate(0deg);
     transition: all 200ms ease-in-out;
