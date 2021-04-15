@@ -8,6 +8,7 @@ $TEXT-BLACK: #3a3939;
 $FADED-TEXT: #544747;
 $PLACEHOLDER: #c4c4c4;
 $FOOTER-COPYRIGHT: #e5f2fc;
+$SUB-TITLE: #17627a;
 
 html,
 body {
@@ -20,6 +21,11 @@ body {
 .heading-serif {
   font-family: "Noto Serif", serif;
   color: $HEADING-COLOR;
+}
+
+.heading-bold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
 p {
@@ -42,6 +48,54 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.main-title {
+  font-size: 41.71px;
+}
+
+.sub-title {
+  font-weight: 400;
+  font-size: 16.68px;
+  color: $SUB-TITLE;
+}
+
+.head-body-1 {
+  display: inline-block;
+  max-width: 60%;
+  margin: 25px 25px 40px 0px;
+}
+
+.head-body-2 {
+  display: inline-block;
+  max-width: 40%;
+  width: 30rem;
+  height: 20rem;
+  margin-top: 5rem;
+  border-radius: 40px;
+  padding: 15px;
+  background-color: $PLACEHOLDER;
+}
+
+.btn-secondary {
+  font-size: 11.2px;
+  font-weight: 700;
+  margin-left: 0px;
+  padding: 10px 25px 10px 25px;
+  border-radius: 40px;
+  border-style: solid;
+  color: $TEXT-BLACK;
+}
+
+.btn-primary {
+  font-size: 11.2px;
+  font-weight: 700;
+  margin: 15px;
+  padding: 12px 25px;
+  border-radius: 40px;
+  border-style: hidden;
+  background-color: $MAIN-COLOR;
+  color: whitesmoke;
 }
 
 .page-container {
