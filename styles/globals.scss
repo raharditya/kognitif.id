@@ -35,3 +35,42 @@ a {
   font-style: Noto-Serif;
   font-size: 41.71px;
 }
+
+.page-container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.why-website-flex {
+  display: flex;
+
+  .why-website-slideshow {
+    width: 300px;
+    height: 300px;
+    background: #000;
+    border-radius: 20px;
+    flex: 1;
+  }
+
+  .why-website-detail {
+    flex: 1;
+    width: 50%;
+  }
+}
+
+/* MEDIA QUERIES */
+
+// @media only screen and (max-width: 600px) {
+// }
+
+@media only screen and (max-width: 768px) {
+  .page-container {
+    max-width: 90%;
+  }
+}
+
+// @media only screen and (max-width: 1299px) {
+// }
+
+// @media screen and (min-width: 1300px) and (max-width: 1600px) {
+// }
