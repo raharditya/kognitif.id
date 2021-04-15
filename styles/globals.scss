@@ -99,14 +99,39 @@ a {
 
 .home-faq {
   display: flex;
+  margin: 4rem 0;
 
   .faq-header {
     flex: 1.5;
     margin-right: 3rem;
+
+    .section-header {
+      margin: 0;
+      margin-bottom: 1.5rem;
+    }
   }
 
   .faq-content {
     flex: 2;
+  }
+}
+
+.is-open {
+  div {
+    background-color: $THEME-BG;
+    transition: background-color 200ms ease-in-out;
+  }
+
+  img {
+    transform: rotate(180deg);
+    transition: all 200ms ease-in-out;
+  }
+}
+
+.is-closed {
+  img {
+    transform: rotate(0deg);
+    transition: all 200ms ease-in-out;
   }
 }
 

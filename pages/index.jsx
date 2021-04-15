@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Collapsible from "react-collapsible";
 import FaqContent from "../components/FaqContent";
 import FaqTitle from "../components/FaqTitle";
 import SectionHeader from "../components/SectionHeader";
@@ -39,7 +40,7 @@ export default function Home() {
         <h2>Kognitif siap menjadi solusi websitemu!</h2>
       </section>
 
-      <section style={{ height: "800px" }}></section>
+      <section style={{ height: "400px" }}></section>
 
       <section className="home-faq">
         <div className="faq-header">
@@ -54,10 +55,32 @@ export default function Home() {
           </small>
         </div>
         <div className="faq-content">
-          <FaqTitle title="Apa itu Kognitif?" />
-          <FaqTitle title="Apa itu Kognitif?" />
-          <FaqContent content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." />
-          <FaqTitle title="Apa itu Kognitif?" />
+          <Collapsible
+            trigger={<FaqTitle title="Apa itu Kognitif?" />}
+            triggerStyle={{ cursor: "pointer" }}
+            transitionTime={200}
+            easing="ease-in-out"
+          >
+            <FaqContent content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." />
+          </Collapsible>
+
+          <Collapsible
+            trigger={<FaqTitle title="Apa itu Kognitif?" />}
+            triggerStyle={{ cursor: "pointer" }}
+            transitionTime={200}
+            easing="ease-in-out"
+          >
+            <FaqContent content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." />
+          </Collapsible>
+
+          <Collapsible
+            trigger={<FaqTitle title="Apa itu Kognitif?" />}
+            triggerStyle={{ cursor: "pointer" }}
+            transitionTime={200}
+            easing="ease-in-out"
+          >
+            <FaqContent content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." />
+          </Collapsible>
         </div>
       </section>
     </div>
