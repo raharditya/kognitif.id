@@ -17,7 +17,7 @@ export default function Home() {
             <h2 className="body sub-title">KOGNITIF WEB DEVELOPMENT</h2>
             <h1 className="heading-serif main-title">Bawa Bisnismu ke <br/> Era Modern</h1>
             <p>
-            We’ve got a vast code base of modules and ready-made solutions
+            We’ve got a vast code base of modules and ready-made solutions <br/>
             that speed up the development process and cut your expenses.
             </p>
             <button className="heading-bold btn-secondary"> View Portofolio </button>
