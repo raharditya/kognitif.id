@@ -7,6 +7,7 @@ $NAVBAR-ACTIVE: #0c87a3;
 $TEXT-BLACK: #3a3939;
 $FADED-TEXT: #544747;
 $PLACEHOLDER: #c4c4c4;
+$SUB-TITLE: #17627A;
 
 html,
 body {
@@ -27,4 +28,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.main-title{
+  font-weight: 700;
+  font-style: Noto-Serif;
+  font-size: 41.71px;
 }
