@@ -28,7 +28,22 @@ export default function Home() {
       </header>
 
       <section>
-        
+        <SectionHeader
+          sectionTitle="Kenapa Kognitif?"
+          category="Unique Selling"
+          isCenter={true}
+        /> 
+        <div>
+          <div>
+
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
       </section>
 
       <section>
