@@ -4,6 +4,7 @@ import BottomCta from "../components/BottomCta";
 import FaqContent from "../components/FaqContent";
 import FaqTitle from "../components/FaqTitle";
 import SectionHeader from "../components/SectionHeader";
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -14,7 +15,8 @@ export default function Home() {
       </Head>
 
       <header>
-        <div>
+        {/* BAGIAN HEADER */}
+        <div className="section-container">
           <div className="head-body-1">
             <h2 className="body sub-title">KOGNITIF WEB DEVELOPMENT</h2>
             <h1 className="heading-serif main-title">Bawa Bisnismu ke <br/> Era Modern</h1>
@@ -22,28 +24,47 @@ export default function Home() {
             We’ve got a vast code base of modules and ready-made solutions <br/>
             that speed up the development process and cut your expenses.
             </p>
-            <button className="heading-bold btn-secondary"> View Portofolio </button>
-            <button className=" heading-bold btn-primary"> Hire Us! </button>
+            <Link href="/portofolio"><a  className="heading-bold btn-secondary"> View Portofolio </a></Link>
+            <Link href="/contact"><a className="heading-bold btn-primary"> Hire Us! </a></Link>
           </div>
           <div className="head-body-2"></div>
         </div>
       </header>
 
       <section>
+        {/* BAGIAN KENAPA KOGNITIF */}
         <SectionHeader
           sectionTitle="Kenapa Kognitif?"
           category="Unique Selling"
           isCenter={true}
         /> 
-        <div>
-          <div>
+        <div className="section-container">
+          <div className="why-cog-1">
 
           </div>
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+          <div className="why-cog-2">
+            <div className="grid-container">
+              <div className="grid-item">
+                <div className="cog-pic"></div>
+                <h1> Modern </h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit magnam nulla voluptate ad libero itaque id atque facilis. </p>
+              </div>
+              <div className="grid-item">
+                <div className="cog-pic"></div>
+                <h1> Modern </h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit magnam nulla voluptate ad libero itaque id atque facilis. </p>
+              </div>
+              <div className="grid-item">
+                <div className="cog-pic"></div>
+                <h1> Modern </h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit magnam nulla voluptate ad libero itaque id atque facilis. </p>
+              </div>
+              <div className="grid-item">
+                <div className="cog-pic"></div>
+                <h1> Modern </h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit magnam nulla voluptate ad libero itaque id atque facilis. </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
