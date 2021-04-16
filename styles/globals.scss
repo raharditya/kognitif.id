@@ -18,6 +18,10 @@ body {
   color: $TEXT-BLACK;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .heading-serif {
   font-family: "Noto Serif", serif;
   color: $HEADING-COLOR;
@@ -60,21 +64,41 @@ a {
   color: $SUB-TITLE;
 }
 
-.head-body-1 {
-  display: inline-block;
-  max-width: 60%;
-  margin: 25px 25px 40px 0px;
+.container {
+  max-width: 80%;
+  margin: 0 auto;
 }
 
-.head-body-2 {
-  display: inline-block;
-  max-width: 40%;
-  width: 30rem;
-  height: 20rem;
-  margin-top: 5rem;
-  border-radius: 40px;
-  padding: 15px;
-  background-color: $PLACEHOLDER;
+header {
+  background-color: $THEME-BG;
+
+  .inner-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 115vh;
+    padding-bottom: 12rem;
+  }
+
+  .head-body-1 {
+    flex: 1;
+    margin-right: 2rem;
+  }
+
+  .head-body-2 {
+    flex: 1;
+    width: 30rem;
+    height: 20rem;
+    border-radius: 40px;
+    background-color: $PLACEHOLDER;
+  }
+}
+
+.content-container {
+  margin-top: -12rem;
+  border-top-left-radius: 8rem;
+  background-color: white;
+  padding-top: 2rem;
 }
 
 .btn-secondary {
@@ -98,11 +122,6 @@ a {
   color: whitesmoke;
 }
 
-.page-container {
-  max-width: 80%;
-  margin: 0 auto;
-}
-
 .section-header {
   margin: 3rem 0;
 
@@ -117,6 +136,52 @@ a {
 
   .section-header-title {
     margin-top: 10px;
+  }
+}
+
+.why-us-section {
+  margin-bottom: 6rem;
+
+  .why-us-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+
+    p {
+      margin: 0 auto;
+      font-size: 0.9rem;
+      max-width: 95%;
+    }
+
+    .why-us-1 {
+      flex: 1;
+      background-color: $PLACEHOLDER;
+      height: 500px;
+      border-radius: 15px;
+    }
+
+    .why-us-2 {
+      flex: 1.5;
+      display: grid;
+      gap: 3rem;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .why-us-item {
+      text-align: center;
+
+      h3 {
+        margin: 1.5rem 0 0.5rem 0;
+      }
+
+      .icon-placeholder {
+        background-color: $PLACEHOLDER;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 10px;
+        margin: auto;
+      }
+    }
   }
 }
 
@@ -154,7 +219,7 @@ a {
 
 .home-faq {
   display: flex;
-  margin: 4rem 0;
+  margin: 4rem auto;
 
   .faq-header {
     flex: 1.5;
