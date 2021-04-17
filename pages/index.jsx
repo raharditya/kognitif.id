@@ -5,6 +5,7 @@ import BottomCta from "../components/BottomCta";
 import FaqContent from "../components/FaqContent";
 import FaqTitle from "../components/FaqTitle";
 import SectionHeader from "../components/SectionHeader";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -15,7 +16,8 @@ export default function Home() {
       </Head>
 
       <header>
-        <div className="inner-header container">
+        {/* BAGIAN HEADER */}
+        <div className="inner-header container section-container">
           <div className="head-body-1">
             <h2 className="body sub-title">KOGNITIF WEB DEVELOPMENT</h2>
             <h1 className="heading-serif main-title">
@@ -39,6 +41,88 @@ export default function Home() {
 
       <div className="content-container">
         <section className="container">
+          {/* BAGIAN KENAPA BUTUH WEBSITE */}
+
+          <SectionHeader
+            sectionTitle="Kenapa kamu butuh website?"
+            category="MARKETING"
+            isCenter={true}
+          />
+          <div className="why-website-flex">
+            <div className="why-website-slideshow" />
+            <div className="why-website-detail">
+              <h4 className="slideshow-title">
+                Menambah Marketing dan Jangkauan Pasar
+              </h4>
+              <p className="slideshow-description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          {/* BAGIAN KENAPA KOGNITIF */}
+          <SectionHeader
+            sectionTitle="Kenapa Kognitif?"
+            category="Unique Selling"
+            isCenter={true}
+          />
+          <div className="section-container">
+            <div className="why-cog-1"></div>
+            <div>
+              <div className="why-cog-2">
+                <div className="grid-container">
+                  <div className="grid-item">
+                    <div className="cog-pic"></div>
+                    <h1> Modern </h1>
+                    <p>
+                      {" "}
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sit magnam nulla voluptate ad libero itaque id atque
+                      facilis.{" "}
+                    </p>
+                  </div>
+                  <div className="grid-item">
+                    <div className="cog-pic"></div>
+                    <h1> Modern </h1>
+                    <p>
+                      {" "}
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sit magnam nulla voluptate ad libero itaque id atque
+                      facilis.{" "}
+                    </p>
+                  </div>
+                  <div className="grid-item">
+                    <div className="cog-pic"></div>
+                    <h1> Modern </h1>
+                    <p>
+                      {" "}
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sit magnam nulla voluptate ad libero itaque id atque
+                      facilis.{" "}
+                    </p>
+                  </div>
+                  <div className="grid-item">
+                    <div className="cog-pic"></div>
+                    <h1> Modern </h1>
+                    <p>
+                      {" "}
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sit magnam nulla voluptate ad libero itaque id atque
+                      facilis.{" "}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
           {/* BAGIAN KENAPA BUTUH WEBSITE */}
 
           <SectionHeader
