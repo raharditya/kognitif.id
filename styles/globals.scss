@@ -54,7 +54,7 @@ a {
   box-sizing: border-box;
 }
 
-.section-container {
+.flex-container {
   display: flex;
   margin: 5rem 5px;
 }
@@ -72,6 +72,30 @@ a {
 .container {
   max-width: 80%;
   margin: 0 auto;
+}
+
+.btn-secondary {
+  font-size: 11.2px;
+  font-weight: 700;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 25px;
+  border-radius: 40px;
+  border-style: solid;
+  color: $TEXT-BLACK;
+}
+
+.btn-primary {
+  font-size: 11.2px;
+  font-weight: 700;
+  margin: 20px;
+  justify-content: center;
+  text-align: center;
+  padding: 12px 25px;
+  border-radius: 40px;
+  border-style: hidden;
+  background-color: $MAIN-COLOR;
+  color: whitesmoke;
 }
 
 header {
@@ -104,85 +128,6 @@ header {
   border-top-left-radius: 8rem;
   background-color: white;
   padding-top: 2rem;
-  .head-body-1 {
-    flex: 1;
-    max-width: 50%;
-  }
-
-  .head-body-2 {
-    flex: 1;
-    max-width: 50%;
-    width: 30rem;
-    height: 20rem;
-    border-radius: 40px;
-    background-color: $PLACEHOLDER;
-  }
-
-  .btn-secondary {
-    font-size: 11.2px;
-    font-weight: 700;
-    justify-content: center;
-    text-align: center;
-    padding: 10px 25px;
-    border-radius: 40px;
-    border-style: solid;
-    color: $TEXT-BLACK;
-  }
-
-  .btn-primary {
-    font-size: 11.2px;
-    font-weight: 700;
-    margin: 20px;
-    justify-content: center;
-    text-align: center;
-    padding: 12px 25px;
-    border-radius: 40px;
-    border-style: hidden;
-    background-color: $MAIN-COLOR;
-    color: whitesmoke;
-  }
-
-  .why-cog-1 {
-    flex: 2;
-    max-width: 40%;
-    width: 10rem;
-    height: 44rem;
-    border-radius: 40px;
-    margin-right: 5rem;
-    background-color: $PLACEHOLDER;
-  }
-
-  .why-cog-2 {
-    flex: 3;
-    max-width: 60%;
-    border-radius: 40px;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 10px;
-  }
-
-  .grid-item {
-    margin: 4rem 2rem;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .cog-pic {
-    margin: auto;
-    margin-bottom: 10px;
-    background-color: $PLACEHOLDER;
-    border-radius: 20px;
-    width: 5rem;
-    height: 5rem;
-  }
-
-  .page-container {
-    max-width: 80%;
-    margin: 0 auto;
-  }
 
   .section-header {
     margin: 3rem 0;
@@ -225,8 +170,9 @@ header {
       .why-us-2 {
         flex: 1.5;
         display: grid;
-        gap: 3rem;
         grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        padding: 10px;
       }
 
       .why-us-item {
@@ -236,12 +182,12 @@ header {
           margin: 1.5rem 0 0.5rem 0;
         }
 
-        .icon-placeholder {
-          background-color: $PLACEHOLDER;
-          height: 4rem;
-          width: 4rem;
-          border-radius: 10px;
+        .cog-pic {
           margin: auto;
+          background-color: $PLACEHOLDER;
+          border-radius: 20px;
+          width: 5rem;
+          height: 5rem;
         }
       }
     }
