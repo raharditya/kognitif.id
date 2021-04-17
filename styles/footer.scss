@@ -1,0 +1,47 @@
+$THEME-BG: #eff8ff;
+$FOOTER-COPYRIGHT: #e5f2fc;
+
+footer {
+  .top-footer {
+    background-color: $THEME-BG;
+    padding: 3rem 0;
+
+    .container {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .footer-col {
+      max-width: 280px;
+    }
+
+    small {
+      display: block;
+      margin-top: 1rem;
+    }
+
+    .footer-social {
+      margin: 2rem 0;
+
+      .footer-social-flex {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .bottom-footer {
+    background-color: $FOOTER-COPYRIGHT;
+    padding: 1rem 0;
+
+    p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
+  }
+}
