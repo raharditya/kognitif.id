@@ -1,0 +1,37 @@
+$THEME-BG: #eff8ff;
+
+nav {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  z-index: 20;
+  top: 0;
+  width: 100%;
+  background-color: $THEME-BG;
+
+  .inner-nav {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      gap: 3rem;
+    }
+
+    li {
+      list-style: none;
+
+      a {
+        font-size: 0.9rem;
+      }
+
+      .nav-btn {
+        padding: 10px 25px;
+      }
+    }
+  }
+}
