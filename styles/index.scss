@@ -1,0 +1,156 @@
+$THEME-BG: #eff8ff;
+$MAIN-COLOR: #8370ed;
+$HEADING-COLOR: #2f2563;
+$NAVBAR-ACTIVE: #0c87a3;
+$TEXT-BLACK: #3a3939;
+$FADED-TEXT: #544747;
+$PLACEHOLDER: #c4c4c4;
+$FOOTER-COPYRIGHT: #e5f2fc;
+$SUB-TITLE: #17627a;
+
+header {
+  background-color: $THEME-BG;
+
+  .inner-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 115vh;
+    padding-bottom: 12rem;
+  }
+
+  .head-body-1 {
+    flex: 1;
+    margin-right: 2rem;
+  }
+
+  .head-body-2 {
+    flex: 1;
+    width: 30rem;
+    height: 20rem;
+    border-radius: 40px;
+    background-color: $PLACEHOLDER;
+  }
+}
+
+.content-container {
+  margin-top: -12rem;
+  border-top-left-radius: 8rem;
+  background-color: white;
+  padding-top: 2rem;
+
+  .section-header {
+    margin: 3rem 0;
+
+    .section-category {
+      padding: 7px 20px;
+      background-color: $MAIN-COLOR;
+      display: inline-block;
+      border-radius: 50px;
+      font-size: 0.6rem;
+      color: white;
+    }
+
+    .section-header-title {
+      margin-top: 10px;
+    }
+  }
+
+  .why-us-section {
+    margin-bottom: 6rem;
+
+    .why-us-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 3rem;
+
+      p {
+        margin: 0 auto;
+        font-size: 0.9rem;
+        max-width: 95%;
+      }
+
+      .why-us-1 {
+        flex: 1;
+        background-color: $PLACEHOLDER;
+        height: 500px;
+        border-radius: 15px;
+      }
+
+      .why-us-2 {
+        flex: 1.5;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        padding: 10px;
+      }
+
+      .why-us-item {
+        text-align: center;
+
+        h3 {
+          margin: 1.5rem 0 0.5rem 0;
+        }
+
+        .cog-pic {
+          margin: auto;
+          background-color: $PLACEHOLDER;
+          border-radius: 20px;
+          width: 5rem;
+          height: 5rem;
+        }
+      }
+    }
+  }
+
+  .why-website-flex {
+    display: flex;
+    margin-bottom: 4rem;
+
+    .why-website-slideshow {
+      // width: 100%;
+      flex: 1;
+      margin-right: 2rem;
+      height: 250px;
+      background: $PLACEHOLDER;
+      border-radius: 20px;
+    }
+
+    .why-website-detail {
+      flex: 2;
+      // width: 50%;
+
+      .slideshow-title {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .home-solution {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: $THEME-BG;
+  }
+
+  .home-faq {
+    display: flex;
+    margin: 4rem auto;
+
+    .faq-header {
+      flex: 1.5;
+      margin-right: 3rem;
+
+      .section-header {
+        margin: 0;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .faq-content {
+      flex: 2;
+    }
+  }
+}
