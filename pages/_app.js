@@ -1,7 +1,9 @@
 import Nav from "../components/Nav";
 import "../styles/globals.scss";
+import "../styles/index.scss";
 import "../styles/nav.scss";
 import "../styles/footer.scss";
+import "../styles/pesan.scss";
 import Footer from "../components/Footer";
 
 function MyApp({ Component, pageProps }) {

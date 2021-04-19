@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header>
+      <header className="home-header">
         {/* BAGIAN HEADER */}
         <div className="inner-header container section-container">
           <div className="head-body-1">
@@ -38,7 +38,7 @@ export default function Home() {
         </div>
       </header>
 
-      <div className="content-container">
+      <div className="home-content-container">
         <section className="container">
           {/* BAGIAN KENAPA BUTUH WEBSITE */}
 
