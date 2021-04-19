@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React from "react";
+import Link from "next/link";
 import Collapsible from "react-collapsible";
 import FaqContent from "../components/FaqContent";
 import FaqTitle from "../components/FaqTitle";
@@ -28,6 +28,107 @@ function pesan(props) {
           <PackageItem />
           <PackageItem />
           <PackageItem />
+        </section>
+
+        <section className="pkg-detail">
+          <div className="pkg-detail-head">
+            <div className="pkg-detail-title detail-item">
+              <h3 className="heading-serif">Detail Paket</h3>
+            </div>
+            <div className="pkg-detail-content detail-item">
+              <h4>BASIC</h4>
+              <Link href="#">
+                <a className="heading-bold btn-primary">Pilih paket</a>
+              </Link>
+            </div>
+            <div className="pkg-detail-content detail-item">
+              <h4>BASIC</h4>
+              <Link href="#">
+                <a className="heading-bold btn-primary">Pilih paket</a>
+              </Link>
+            </div>
+            <div className="pkg-detail-content detail-item">
+              <h4>BASIC</h4>
+              <Link href="#">
+                <a className="heading-bold btn-primary">Pilih paket</a>
+              </Link>
+            </div>
+          </div>
+
+          <div className="pkg-detail-body">
+            <div className="pkg-detail-title detail-item">
+              <h3>Jumlah Halaman</h3>
+            </div>
+            <div className="pkg-detail-content detail-item">
+              <p>Maksimal 3 halaman</p>
+            </div>
+            <div className="pkg-detail-content detail-item">
+              <p>Maksimal 3 halaman</p>
+            </div>
+            <div className="pkg-detail-content detail-item">
+              <p>Maksimal 3 halaman</p>
+            </div>
+          </div>
+
+          <div className="pkg-detail-body">
+            <div className="pkg-detail-title detail-item">
+              <h3>Desain responsive</h3>
+            </div>
+            <div className="pkg-detail-content detail-item">
+              <img src="/svg/cross.svg" alt="" />
+            </div>
+            <div className="pkg-detail-content detail-item">
+              <img src="/svg/check.svg" alt="" />
+            </div>
+            <div className="pkg-detail-content detail-item">
+              <img src="/svg/check.svg" alt="" />
+            </div>
+          </div>
+
+          <div className="pkg-detail-body">
+            <div className="pkg-detail-title detail-item">
+              <h3>Desain responsive</h3>
+            </div>
+            <div className="pkg-detail-content detail-item">
+              <img src="/svg/cross.svg" alt="" />
+            </div>
+            <div className="pkg-detail-content detail-item">
+              <img src="/svg/check.svg" alt="" />
+            </div>
+            <div className="pkg-detail-content detail-item">
+              <img src="/svg/check.svg" alt="" />
+            </div>
+          </div>
+
+          <div className="pkg-detail-body">
+            <div className="pkg-detail-title detail-item">
+              <h3>Desain responsive</h3>
+            </div>
+            <div className="pkg-detail-content detail-item">
+              <img src="/svg/cross.svg" alt="" />
+            </div>
+            <div className="pkg-detail-content detail-item">
+              <img src="/svg/check.svg" alt="" />
+            </div>
+            <div className="pkg-detail-content detail-item">
+              <img src="/svg/check.svg" alt="" />
+            </div>
+          </div>
+
+          <div className="pkg-detail-body">
+            <div className="pkg-detail-title detail-item">
+              <h3>Desain responsive</h3>
+            </div>
+            <div className="pkg-detail-content detail-item">
+              <img src="/svg/cross.svg" alt="" />
+            </div>
+            <div className="pkg-detail-content detail-item">
+              <img src="/svg/check.svg" alt="" />
+            </div>
+            <div className="pkg-detail-content detail-item">
+              <img src="/svg/check.svg" alt="" />
+            </div>
+          </div>
         </section>
 
         <section className="custom-pkg">

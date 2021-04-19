@@ -86,6 +86,52 @@ $BLUE: #8370ed;
     }
   }
 
+  .pkg-detail {
+    margin: 3rem 0;
+    // border-radius: 15px;
+    // overflow: hidden;
+
+    .detail-item:nth-child(odd) {
+      background-color: $THEME-BG;
+    }
+
+    .detail-item:nth-child(even) {
+      background-color: white;
+    }
+    .pkg-detail-title {
+      flex: 1.5;
+    }
+
+    .pkg-detail-content {
+      flex: 1;
+      text-align: center;
+    }
+
+    .pkg-detail-head {
+      display: flex;
+      align-items: center;
+      position: sticky;
+      top: 11vh;
+
+      .detail-item {
+        padding: 1.5rem;
+      }
+
+      h4 {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .pkg-detail-body {
+      display: flex;
+      align-items: center;
+
+      .detail-item {
+        padding: 1rem 1.5rem;
+      }
+    }
+  }
+
   .custom-pkg {
     margin-top: 5rem;
 
