@@ -35,7 +35,7 @@ function Nav(props) {
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/pesan">
                 <a className="heading-bold btn-primary nav-btn">PESAN</a>
               </Link>
             </li>
