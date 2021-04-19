@@ -1,0 +1,122 @@
+$THEME-BG: #eff8ff;
+$MAIN-COLOR: #8370ed;
+$HEADING-COLOR: #2f2563;
+$NAVBAR-ACTIVE: #0c87a3;
+$TEXT-BLACK: #3a3939;
+$FADED-TEXT: #929292;
+$PLACEHOLDER: #c4c4c4;
+$FOOTER-COPYRIGHT: #e5f2fc;
+$SUB-TITLE: #17627a;
+$BLUE: #8370ed;
+
+.abt-header {
+    background-color: $THEME-BG;
+  
+    .inner-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 115vh;
+      padding-bottom: 12rem;
+    }
+  
+    .head-abt-1 {
+      flex: 2;
+      margin-right: 2rem;
+    }
+  
+    .head-abt-2 {
+      flex: 1.5;
+      width: 30rem;
+      height: 26rem;
+      border-radius: 40px;
+      background-color: $PLACEHOLDER;
+    }
+}
+
+.abt-container{
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 700;
+    color: $MAIN-COLOR;
+
+    .abt-item{
+        flex: 1;
+    }
+
+    .abt-item-1{
+        border-right: solid $MAIN-COLOR;
+    }
+}
+
+.abt-team-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+    justify-content: center;
+}
+
+.abt-content-container {
+    margin-top: -19rem;
+    border-top-left-radius: 8rem;
+    border-top-right-radius: 8rem;
+    background-color: white;
+    padding-top: 2rem;
+  
+    .section-header {
+      margin: 3rem 0;
+  
+      .section-category {
+        padding: 7px 20px;
+        background-color: $MAIN-COLOR;
+        display: inline-block;
+        border-radius: 50px;
+        font-size: 0.6rem;
+        color: white;
+      }
+  
+      .section-header-title {
+        margin-top: 10px;
+      }
+    }
+}
+
+.abt-team-disp{
+    margin: 5rem;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+
+    .abt-team-placeholder{
+        background-color: $PLACEHOLDER;
+        border-radius: 50%;
+        height: 20rem;
+        width: 20rem;
+    }
+}
+
+.abt-team-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    grid-template-areas:
+    ". . ."
+    "it it it";
+
+    .it { grid-area: it; }
+}
+
+.abt-team-title{
+    margin-top: 2rem;
+}

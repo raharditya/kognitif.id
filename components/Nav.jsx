@@ -25,7 +25,7 @@ function Nav(props) {
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/about">
                 <a>Tentang Kami</a>
               </Link>
             </li>
