@@ -8,7 +8,7 @@ $PLACEHOLDER: #c4c4c4;
 $FOOTER-COPYRIGHT: #e5f2fc;
 $SUB-TITLE: #17627a;
 
-header {
+.home-header {
   background-color: $THEME-BG;
 
   .inner-header {
@@ -33,7 +33,7 @@ header {
   }
 }
 
-.content-container {
+.home-content-container {
   margin-top: -12rem;
   border-top-left-radius: 8rem;
   background-color: white;
