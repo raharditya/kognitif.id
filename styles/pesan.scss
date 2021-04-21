@@ -3,7 +3,7 @@ $MAIN-COLOR: #8370ed;
 $HEADING-COLOR: #2f2563;
 $NAVBAR-ACTIVE: #0c87a3;
 $TEXT-BLACK: #3a3939;
-$FADED-TEXT: #929292;
+$FADED-TEXT: #6e6e6e;
 $PLACEHOLDER: #c4c4c4;
 $FOOTER-COPYRIGHT: #e5f2fc;
 $SUB-TITLE: #17627a;
@@ -88,8 +88,9 @@ $BLUE: #8370ed;
 
   .pkg-detail {
     margin: 3rem 0;
-    // border-radius: 15px;
+    border-radius: 15px;
     // overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(20, 20, 20, 0.185);
 
     .detail-item:nth-child(odd) {
       background-color: $THEME-BG;
@@ -98,6 +99,15 @@ $BLUE: #8370ed;
     .detail-item:nth-child(even) {
       background-color: white;
     }
+
+    .detail-item {
+      border-right: 2px solid rgb(206, 206, 206);
+    }
+
+    .detail-item:last-child {
+      border-right: none;
+    }
+
     .pkg-detail-title {
       flex: 1.5;
     }
@@ -109,9 +119,10 @@ $BLUE: #8370ed;
 
     .pkg-detail-head {
       display: flex;
-      align-items: center;
+      align-items: stretch;
       position: sticky;
       top: 11vh;
+      border-radius: 15px 15px 0 0;
 
       .detail-item {
         padding: 1.5rem;
@@ -124,11 +135,72 @@ $BLUE: #8370ed;
 
     .pkg-detail-body {
       display: flex;
-      align-items: center;
+      align-items: stretch;
+      border-top: 1px solid rgb(214, 214, 214);
 
       .detail-item {
         padding: 1rem 1.5rem;
       }
+
+      h3 {
+        align-self: center;
+      }
+    }
+  }
+
+  .pkg-detail-mobile {
+    margin: 3rem 0;
+    position: relative;
+    text-align: center;
+    display: none;
+
+    .detail-mobile-title {
+      position: sticky;
+      top: 8vh;
+      padding: 1.5rem 0;
+      border-radius: 15px;
+
+      h3 {
+        margin-bottom: 10px;
+      }
+    }
+
+    .mobile-basic-header {
+      background-color: #3d7282;
+      color: white;
+    }
+
+    .mobile-business-header {
+      background-color: #3d8254;
+      color: white;
+    }
+
+    .mobile-ecommerce-header {
+      background-color: #3d4d82;
+      color: white;
+    }
+
+    .detail-item {
+      padding: 1.5rem 1rem;
+
+      p {
+        font-size: 0.9rem;
+        color: $FADED-TEXT;
+        margin-top: 10px;
+      }
+
+      img {
+        width: 27px;
+        margin-top: 10px;
+      }
+    }
+
+    .detail-item:nth-child(odd) {
+      background-color: $THEME-BG;
+    }
+
+    .detail-item:nth-child(even) {
+      background-color: white;
     }
   }
 
@@ -145,6 +217,38 @@ $BLUE: #8370ed;
       grid-template-columns: 1fr 1fr;
       column-gap: 1.5rem;
       margin-top: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .pkg-header {
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .pkg-content-container {
+    .pkg-flex {
+      flex-direction: column;
+    }
+
+    .pkg-detail {
+      display: none;
+    }
+
+    .pkg-detail-mobile {
+      display: block;
+    }
+
+    .custom-pkg {
+      .custom-pkg-grid {
+        grid-template-columns: 1fr;
+      }
     }
   }
 }

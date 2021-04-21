@@ -125,7 +125,84 @@ function pesan(props) {
             <div className="pkg-detail-content detail-item">
               <img src="/svg/check.svg" alt="" />
             </div>
-            <div className="pkg-detail-content detail-item">
+            <div className="pkg-detail-content detail-item"></div>
+          </div>
+        </section>
+
+        <section className="pkg-detail-mobile">
+          {/* PAKET BASIC */}
+          <div className="detail-mobile-title mobile-basic-header">
+            <h3>BASIC</h3>
+            <Link href="#">
+              <a className="">Pilih paket</a>
+            </Link>
+          </div>
+
+          <div className="detail-mobile-content">
+            <div className="pkg-detail-title detail-item">
+              <h4>Desain responsive</h4>
+              <p>Max 3 halaman</p>
+            </div>
+
+            <div className="pkg-detail-title detail-item">
+              <h4>Desain responsive</h4>
+              <img src="/svg/check.svg" alt="" />
+            </div>
+
+            <div className="pkg-detail-title detail-item">
+              <h4>Desain responsive</h4>
+              <img src="/svg/check.svg" alt="" />
+            </div>
+          </div>
+
+          {/* PAKET BUSINESS */}
+
+          <div className="detail-mobile-title mobile-business-header">
+            <h3>BASIC</h3>
+            <Link href="#">
+              <a className="">Pilih paket</a>
+            </Link>
+          </div>
+
+          <div className="detail-mobile-content">
+            <div className="pkg-detail-title detail-item">
+              <h4>Desain responsive</h4>
+              <p>Max 3 halaman</p>
+            </div>
+
+            <div className="pkg-detail-title detail-item">
+              <h4>Desain responsive</h4>
+              <img src="/svg/check.svg" alt="" />
+            </div>
+
+            <div className="pkg-detail-title detail-item">
+              <h4>Desain responsive</h4>
+              <img src="/svg/check.svg" alt="" />
+            </div>
+          </div>
+
+          {/* PAKET ECOMMERCE */}
+
+          <div className="detail-mobile-title mobile-ecommerce-header">
+            <h3>ECOMMERCE</h3>
+            <Link href="#">
+              <a className="">Pilih paket</a>
+            </Link>
+          </div>
+
+          <div className="detail-mobile-content">
+            <div className="pkg-detail-title detail-item">
+              <h4>Desain responsive</h4>
+              <p>Max 3 halaman</p>
+            </div>
+
+            <div className="pkg-detail-title detail-item">
+              <h4>Desain responsive</h4>
+              <img src="/svg/check.svg" alt="" />
+            </div>
+
+            <div className="pkg-detail-title detail-item">
+              <h4>Desain responsive</h4>
               <img src="/svg/check.svg" alt="" />
             </div>
           </div>
