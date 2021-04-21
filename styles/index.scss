@@ -8,6 +8,16 @@ $PLACEHOLDER: #c4c4c4;
 $FOOTER-COPYRIGHT: #e5f2fc;
 $SUB-TITLE: #17627a;
 
+.main-title {
+  font-size: 41.71px;
+}
+
+.sub-title {
+  font-weight: 400;
+  font-size: 16.68px;
+  color: $SUB-TITLE;
+}
+
 .home-header {
   background-color: $THEME-BG;
 
@@ -151,6 +161,69 @@ $SUB-TITLE: #17627a;
 
     .faq-content {
       flex: 2;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home-header {
+    .inner-header {
+      flex-direction: column-reverse;
+      padding: 3rem 0;
+
+      .head-body-1 {
+        margin-right: 0;
+        margin-top: 3rem;
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
+
+      .head-body-2 {
+        flex: unset;
+        width: 100%;
+        height: 15rem;
+      }
+    }
+  }
+
+  .main-title {
+    font-size: 1.8rem;
+  }
+
+  .sub-title {
+    font-size: 0.9rem;
+  }
+
+  .home-content-container {
+    .why-website-flex {
+      flex-direction: column;
+
+      .why-website-slideshow {
+        flex: unset;
+        width: 100%;
+        height: 180px;
+        margin-bottom: 2rem;
+      }
+    }
+
+    .why-us-section {
+      .why-us-inner {
+        flex-direction: column;
+        .why-us-1 {
+          width: 100%;
+          height: 180px;
+          flex: unset;
+        }
+        .why-us-2 {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+
+    .home-faq {
+      flex-direction: column;
     }
   }
 }
