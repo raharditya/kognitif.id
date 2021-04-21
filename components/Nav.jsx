@@ -1,14 +1,20 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 function Nav(props) {
+  const [navToggle, setNavToggle] = useState(false);
+
   return (
     <nav>
       <div className="inner-nav">
-        <img src="/svg/logo.svg" alt="Logo Kognitif" />
+        <Link href="/">
+          <a>
+            <img src="/svg/logo.svg" alt="Logo Kognitif" />
+          </a>
+        </Link>
 
-        <div className="">
-          <ul>
+        <div className="nav-links">
+          <ul className={navToggle ? "nav-open" : ""}>
             <li>
               <Link href="/">
                 <a>Beranda</a>
@@ -40,6 +46,15 @@ function Nav(props) {
               </Link>
             </li>
           </ul>
+        </div>
+
+        <div
+          className={`${navToggle ? "toggle" : ""} nav-burger`}
+          onClick={() => setNavToggle(!navToggle)}
+        >
+          <div className={`line-1`}></div>
+          <div className={`line-2`}></div>
+          <div className={`line-3`}></div>
         </div>
       </div>
     </nav>
