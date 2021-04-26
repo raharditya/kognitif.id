@@ -2,27 +2,41 @@ import React from 'react';
 
 function TeamContent(props) {
     return(
-        <div className="abt-team-item">
-            <div className="abt-team-disp">
-                <div className="abt-team-placeholder">{/* <img src="" alt=""/> */}</div>
-                <h2 className="abt-team-title">Lorema Obelix</h2>
-                <p>UI/UX Designer</p>
+        <div className="tc-flex">
+            <div className="tc-container">
+                <div className="tc-info">
+                    <div className="tc-image"></div>
+                    <div className="tc-desc">
+                        <h2> Lorema Obelix </h2>
+                        <p> Programmer </p>
+                    </div>
+                </div>
             </div>
-            <div className="abt-team-disp">
-                <div className="abt-team-placeholder">{/* <img src="" alt=""/> */}</div>
-                <h2 className="abt-team-title">Lorema Obelix</h2>
-                <p>UI/UX Designer</p>
+            <div className="tc-container">
+                <div className="tc-info">
+                    <div className="tc-image"></div>
+                    <div className="tc-desc">
+                        <h2> Lorema Obelix </h2>
+                        <p> Programmer </p>
+                    </div>
+                </div>
             </div>
-            <div className="abt-team-disp">
-                <div className="abt-team-placeholder">{/* <img src="" alt=""/> */}</div>
-                <h2 className="abt-team-title">Lorema Obelix</h2>
-                <p>UI/UX Designer</p>
+            <div className="tc-container">
+                <div className="tc-info">
+                    <div className="tc-image"></div>
+                    <div className="tc-desc">
+                        <h2> Lorema Obelix </h2>
+                        <p> Programmer </p>
+                    </div>
+                </div>
             </div>
-            <div className="it">
-                <div className="abt-team-disp">
-                    <div className="abt-team-placeholder">{/* <img src="" alt=""/> */}</div>
-                    <h2 className="abt-team-title">Lorema Obelix</h2>
-                    <p>UI/UX Designer</p>
+            <div className="tc-container">
+                <div className="tc-info">
+                    <div className="tc-image"></div>
+                    <div className="tc-desc">
+                        <h2> Lorema Obelix </h2>
+                        <p> Programmer </p>
+                    </div>
                 </div>
             </div>
         </div>

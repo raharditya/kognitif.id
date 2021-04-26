@@ -10,7 +10,7 @@ function about(props) {
             </Head>
 
             <header className="abt-header">
-                <div className="inner-header container section-container">
+                <div className="inner-abt-header container section-container">
                     <div className="head-abt-1">
                         <h2 className="body sub-title"> Beberapa Kata Tentang Kami </h2>
                         <h1 className="heading-serif main-title"> Kenal kami lebih <br /> dalam </h1>
@@ -35,7 +35,7 @@ function about(props) {
             </header>
 
             <div className="abt-content-container">
-                <section>
+                <section className="container">
                     <h2 className="heading-serif center">Meet our team</h2>
                     <TeamContent />
                 </section>
