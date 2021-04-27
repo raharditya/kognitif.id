@@ -96,9 +96,9 @@ $BLUE: #8370ed;
 .tc-container{
   display: flex;
   flex-direction: column;
-  border-radius: 50px;
+  border-radius: 20px;
   height: 25rem;
-  width: 19rem;
+  width: 17.5rem;
   box-shadow: 0px 0px 10px rgba(20, 20, 20, 0.185);
   margin: 5rem 0 5rem 0;
 
@@ -114,6 +114,9 @@ $BLUE: #8370ed;
       height: 15rem;
       width: 15rem;
       background-color: $PLACEHOLDER;
+      // background-image: url("../public/profile-pic.png");
+      background-size: contain;
+      background-repeat: no-repeat;
       box-shadow: 0px 0px 10px rgba(20, 20, 20, 0.185);
       margin-top: 1rem;
     }
