@@ -1,17 +1,66 @@
+import { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Collapsible from "react-collapsible";
+import Modal from "react-modal";
+
 import FaqContent from "../components/FaqContent";
 import FaqTitle from "../components/FaqTitle";
 import BottomCta from "../components/BottomCta";
 import PackageItem from "../components/PackageItem";
 
 function pesan(props) {
+  const [modalIsOpen, setIsOpen] = useState(true);
+
+  const customStyles = {
+    content: {
+      top: "50%",
+      left: "50%",
+      right: "auto",
+      bottom: "auto",
+      marginRight: "-50%",
+      transform: "translate(-50%, -50%)",
+    },
+  };
+  // Modal.setAppElement("#yourAppElement");
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
   return (
     <div className="page-container">
       <Head>
         <title>Paket Website - Kognitif</title>
       </Head>
+
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <div className="form-progress">
+          <h4>Tipe Website</h4>
+          <h4>Data Pemesan</h4>
+          <h4>Deskripsi Isi</h4>
+          <h4>Verifikasi</h4>
+        </div>
+        <h2>Hello</h2>
+        <button onClick={closeModal}>close</button>
+        <div>I am a modal</div>
+        <form>
+          <input />
+          <button>tab navigation</button>
+          <button>stays</button>
+          <button>inside</button>
+          <button>the modal</button>
+        </form>
+      </Modal>
 
       <header className="pkg-header">
         <div className="inner-pkg-header container">
@@ -25,7 +74,7 @@ function pesan(props) {
 
       <div className="pkg-content-container container">
         <section className="pkg-flex">
-          <PackageItem />
+          <PackageItem openModal={openModal} />
           <PackageItem />
           <PackageItem />
         </section>

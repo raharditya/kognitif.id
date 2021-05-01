@@ -47,9 +47,9 @@ function PackageItem(props) {
       </div>
 
       <div className="pkg-cta-container">
-        <Link href="#">
-          <a className="heading-bold btn-primary">Pilih Paket</a>
-        </Link>
+        <div className="heading-bold btn-primary" onClick={props.openModal}>
+          Pilih Paket
+        </div>
       </div>
     </div>
   );
