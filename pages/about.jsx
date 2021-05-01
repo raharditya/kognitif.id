@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import TeamContent from "../components/TeamContent";
+import Link from "next/link";
 
 function about(props) {
     return(
@@ -20,13 +21,22 @@ function about(props) {
                         took a galley of type and scrambled it to make a type specimen book. 
                         </p>
                         <div className="abt-container">
-                            <div className="abt-item abt-item-1">
-                                <img src="/svg/check.svg" alt=""/>
-                                <p> 200+ <br/> Proyek telah selesai </p>
-                            </div>
-                            <div className="abt-item">
-                                <img src="/svg/cross.svg" alt=""/>
-                                <p> 100+ <br/> Total Pelanggan </p>
+                            <div className="abt-social">
+                                <Link href="/">
+                                    <a>
+                                        <img src="/svg/whatsapp.svg" alt=""/>
+                                    </a>
+                                </Link>
+                                <Link href="/">
+                                    <a>
+                                        <img src="svg/instagram.svg" alt="" />
+                                    </a>
+                                </Link>
+                                <Link href="/">
+                                    <a>
+                                        <img src="svg/dribbble.svg" alt="" />
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
