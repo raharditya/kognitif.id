@@ -13,6 +13,12 @@
     "react": "17.0.2",
     "react-collapsible": "^2.8.3",
     "react-dom": "17.0.2",
-    "react-modal": "^3.13.1"
+    "react-icons": "^4.2.0",
+    "react-modal": "^3.13.1",
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.36.2"
   }
 }
