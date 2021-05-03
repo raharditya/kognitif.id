@@ -7,6 +7,53 @@ $FADED-TEXT: #544747;
 $PLACEHOLDER: #c4c4c4;
 $FOOTER-COPYRIGHT: #e5f2fc;
 $SUB-TITLE: #17627a;
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.App {
+  margin: auto;
+}
+
+.slide img {
+  width: 20rem;
+  margin: 0 auto;
+}
+
+.slide {
+  transform: scale(0.2);
+  transition: transform 300ms;
+  opacity: 0.5;
+}
+
+.activeSlide {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.arrow {
+  background-color: #fff;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow svg {
+  transition: color 300ms;
+}
+
+.arrow svg:hover {
+  color: #68edff;
+}
+
+.next {
+  right: 0%;
+  top: 50%;
+}
+
+.prev {
+  left: 0%;
+  top: 50%;
+}
 
 .main-title {
   font-size: 41.71px;
@@ -113,6 +160,62 @@ $SUB-TITLE: #17627a;
     }
   }
 
+  .portfolio-section{
+    margin: auto;
+    padding: 4rem;
+
+    .App {
+      margin: auto;
+    }
+    
+    .slide img {
+      width: 20rem;
+      margin: 0 auto;
+    }
+    
+    .slide {
+      transform: scale(0.2);
+      transition: transform 300ms;
+      opacity: 0.5;
+    }
+    
+    .activeSlide {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    .activeSlide:hover {
+      transform: scale(0.8);
+      opacity: 1;
+      margin: auto auto auto -1.5rem;
+    }
+    
+    .arrow {
+      background-color: #fff;
+      position: absolute;
+      cursor: pointer;
+      z-index: 10;
+    }
+    
+    .arrow svg {
+      transition: color 300ms;
+    }
+    
+    .arrow svg:hover {
+      color: $MAIN-COLOR;
+    }
+    
+    .next {
+      right: 0%;
+      top: 50%;
+    }
+    
+    .prev {
+      left: 0%;
+      top: 50%;
+    }
+  }
+
   .why-website-flex {
     display: flex;
     margin-bottom: 4rem;
@@ -206,6 +309,34 @@ $SUB-TITLE: #17627a;
         height: 180px;
         margin-bottom: 2rem;
       }
+    }
+
+    .portfolio-section{
+      align-items: center;
+      margin: auto;
+      padding: 0;
+
+      .App {
+        margin: auto;
+      }
+      
+      .slide img {
+        width: 10rem;
+        margin: 0 auto;
+      }
+      
+      .slide {
+        transform: scale(0.2);
+        transition: transform 300ms;
+        opacity: 0.5;
+      }
+      
+      .activeSlide {
+        transform: scale(1);
+        opacity: 1;
+        margin: auto auto auto -1.5rem;
+      }
+      
     }
 
     .why-us-section {

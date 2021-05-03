@@ -5,6 +5,7 @@ import BottomCta from "../components/BottomCta";
 import FaqContent from "../components/FaqContent";
 import FaqTitle from "../components/FaqTitle";
 import SectionHeader from "../components/SectionHeader";
+import PortfolioCarousel from "../components/PortfolioCarousel";
 
 export default function Home() {
   return (
@@ -69,7 +70,14 @@ export default function Home() {
           <h2>Kognitif siap menjadi solusi websitemu!</h2>
         </section>
 
-        <section style={{ height: "400px" }} className="container"></section>
+        <section className="portfolio-section container">
+          <SectionHeader
+            sectionTitle="Our Latest Works"
+            category="Our Portfolio"
+            isCenter={true}
+          />
+          <PortfolioCarousel />
+        </section>
 
         <section className="why-us-section container">
           <SectionHeader
