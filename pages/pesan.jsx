@@ -12,17 +12,7 @@ import PackageItem from "../components/PackageItem";
 function pesan(props) {
   const [modalIsOpen, setIsOpen] = useState(true);
 
-  const customStyles = {
-    content: {
-      top: "50%",
-      left: "50%",
-      right: "auto",
-      bottom: "auto",
-      marginRight: "-50%",
-      transform: "translate(-50%, -50%)",
-    },
-  };
-  // Modal.setAppElement("#yourAppElement");
+  Modal.setAppElement("#__next");
 
   function closeModal() {
     setIsOpen(false);
@@ -41,25 +31,38 @@ function pesan(props) {
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
-        style={customStyles}
         contentLabel="Example Modal"
+        className="modal-container"
+        overlayClassName="modal-overlay"
       >
-        <div className="form-progress">
-          <h4>Tipe Website</h4>
-          <h4>Data Pemesan</h4>
-          <h4>Deskripsi Isi</h4>
-          <h4>Verifikasi</h4>
+        <div className="modal-inner">
+          <div className="form-progress">
+            <p className="form-progress-item progress-active">Tipe Website</p>
+            <p className="form-progress-item">Data Pemesan</p>
+            <p className="form-progress-item">Deskripsi Isi</p>
+            <p className="form-progress-item">Verifikasi</p>
+          </div>
+          <h2 className="heading-serif">Mari Berkenalan!</h2>
+          <form>
+            <div className="modal-input-row">
+              <p>Nama Pemesan:</p>
+              <input name="name" placeholder="Nama Anda di sini" />
+            </div>
+            <div className="modal-input-row">
+              <p>Email:</p>
+              <input name="name" placeholder="Email Anda di sini" />
+            </div>
+            <div className="modal-input-row">
+              <p>Nomor Whatsapp:</p>
+              <input name="name" placeholder="0852xxxxxxxx" />
+            </div>
+          </form>
+
+          <div className="modal-nav">
+            <button className="modal-nav-prev">Kembali</button>
+            <button className="modal-nav-next">Lanjut</button>
+          </div>
         </div>
-        <h2>Hello</h2>
-        <button onClick={closeModal}>close</button>
-        <div>I am a modal</div>
-        <form>
-          <input />
-          <button>tab navigation</button>
-          <button>stays</button>
-          <button>inside</button>
-          <button>the modal</button>
-        </form>
       </Modal>
 
       <header className="pkg-header">

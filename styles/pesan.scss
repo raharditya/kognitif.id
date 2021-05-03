@@ -221,6 +221,134 @@ $BLUE: #8370ed;
   }
 }
 
+// MODAL
+.modal-overlay {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.534);
+}
+
+.modal-container {
+  // top: 50%;
+  // left: 50%;
+  // right: auto;
+  // bottom: auto;
+  // margin-right: -50%;
+  // transform: translate(-50%, -50%);
+  position: absolute;
+  top: 40px;
+  left: 8rem;
+  right: 8rem;
+  bottom: 40px;
+  background-color: white;
+  border-radius: 15px;
+  outline: none;
+
+  p {
+    margin: 0;
+  }
+
+  .modal-inner {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .form-progress {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .form-progress-item {
+      margin: 0;
+      padding: 9px 25px;
+      color: $FADED-TEXT;
+      font-size: 0.9rem;
+    }
+
+    .progress-active {
+      font-weight: bold;
+      background-color: $THEME-BG;
+      color: $TEXT-BLACK;
+      border-radius: 10px;
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .modal-input-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid #eff8ff;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    p {
+      width: 30%;
+      text-align: start;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      height: 2.2rem;
+      border: 1px solid #c1c1c1;
+      border-radius: 10px;
+      background-color: #fbfbfb;
+      transition: background-color 150ms ease-in-out;
+      padding: 0 1rem;
+
+      &:focus {
+        background-color: white;
+        border: 2px solid #cf8a8a;
+        outline: none;
+      }
+    }
+  }
+
+  .modal-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+
+    button {
+      padding: 10px 30px;
+    }
+
+    .modal-nav-prev {
+      background-color: white;
+      border-radius: 10px;
+      border: 1px solid #c1c1c1;
+    }
+
+    .modal-nav-next {
+      background-color: $BLUE;
+      border-radius: 10px;
+      border: 1px solid $BLUE;
+      color: white;
+      font-weight: bold;
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .pkg-header {
     h2 {
