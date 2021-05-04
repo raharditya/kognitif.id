@@ -173,12 +173,14 @@ $SUB-TITLE: #17627a;
 
     #parent .portfolio-prop{
       visibility: hidden;
+      transform: scale(0.4);
+      transition: transform 300ms;
     }
 
     #parent:hover .portfolio-prop{
       visibility: visible;
-      transform: translate3d(0, 0, 0);
-      transition: transform 300ms ease;
+      transform: scale(1);
+      transition: transform 300ms;
     }
     
     .portfolio-link-container{
