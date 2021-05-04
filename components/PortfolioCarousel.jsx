@@ -30,7 +30,7 @@ const images = [
     caption:"",
     header:"",
     key:"3",
-    title: "Manggamangga drink",
+    title: "Mangga drink",
     desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
@@ -104,7 +104,7 @@ function PortfolioCarousel(props) {
             <div id="parent" className="portfolio-link-container">
               <div className="portfolio-prop">
                 <div className="portfolio-link-prop">
-                  <h1 style={{fontSize: `18px`}}>{img.title}</h1>
+                  <h1 style={{fontSize: `16px`}}>{img.title}</h1>
                   <a href={img.url}>
                     <FaArrowRight />
                   </a>
