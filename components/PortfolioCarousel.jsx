@@ -51,6 +51,15 @@ const images = [
     title: "Shopee Cart",
     desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
+  {
+    src:"/assets/food.jpg",
+    alt:"portfolio_6",
+    caption:"",
+    header:"",
+    key:"6",
+    title: "Food Heist",
+    desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
 ];
 
 function PortfolioCarousel(props) {
@@ -90,7 +99,7 @@ function PortfolioCarousel(props) {
       <Slider {...settings}>
         {images.map((img, idx) => (
           <div className={idx === imageIndex ? "slide activeSlide" : "slide"}>
-            <img key={img.key} 
+            <img key={img.key} className="img-prop" 
             src={img.src} alt=""/>
             <div id="parent" className="portfolio-link-container">
               <div className="portfolio-prop">
