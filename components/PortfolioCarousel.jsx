@@ -92,7 +92,7 @@ function PortfolioCarousel(props) {
           <div className={idx === imageIndex ? "slide activeSlide" : "slide"}>
             <img key={img.key} 
             src={img.src} alt=""/>
-            <div className="portfolio-link-container">
+            <div id="parent" className="portfolio-link-container">
               <div className="portfolio-prop">
                 <div className="portfolio-link-prop">
                   <h1 style={{fontSize: `18px`}}>{img.title}</h1>

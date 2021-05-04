@@ -139,12 +139,6 @@ $SUB-TITLE: #17627a;
       transform: scale(1);
       opacity: 1;
     }
-
-    .activeSlide:hover {
-      transform: scale(0.8);
-      opacity: 1;
-      margin: auto auto auto -1.5rem;
-    }
     
     .arrow {
       height: 2rem;
@@ -176,8 +170,19 @@ $SUB-TITLE: #17627a;
       left: 0%;
       top: 50%;
     }
+
+    #parent .portfolio-prop{
+      visibility: hidden;
+    }
+
+    #parent:hover .portfolio-prop{
+      visibility: visible;
+      transform: translate3d(0, 0, 0);
+      transition: transform 300ms ease;
+    }
     
     .portfolio-link-container{
+      display: block;
       position: absolute;
       left: -0.3rem;
       right: 1rem;
@@ -187,6 +192,8 @@ $SUB-TITLE: #17627a;
       z-index: 20;
 
       .portfolio-prop{
+        visibility: visible;
+        display: block;
         border-radius: 15px;
         padding: 1rem;
         position: relative;
@@ -196,9 +203,9 @@ $SUB-TITLE: #17627a;
         margin-top: 15.1rem;
         height: 7rem;
         width: 20.2rem;
-        z-index: 10;
+        z-index: 25;
         box-shadow: 0px 0px 10px rgba(20, 20, 20, 0.185);
-        
+
         .portfolio-link-prop{
           display: flex;
           flex-direction: row;
@@ -211,16 +218,16 @@ $SUB-TITLE: #17627a;
           .portfolio-link-prop a{
             flex: 1;
           }
+          
+          .portfolio-link-prop{
+            background-color: #fff;
+          }
 
           .portfolio-link-prop a svg:hover{
             color: $MAIN-COLOR;
           }
         }
       }
-    }
-
-    .portfolio-link-container:hover{
-      visibility: visible;
     }
   }
 
