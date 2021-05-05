@@ -8,6 +8,7 @@ import FaqContent from "../components/FaqContent";
 import FaqTitle from "../components/FaqTitle";
 import BottomCta from "../components/BottomCta";
 import PackageItem from "../components/PackageItem";
+import FormRow from "../components/FormRow";
 
 function pesan(props) {
   const [modalIsOpen, setIsOpen] = useState(true);
@@ -20,6 +21,41 @@ function pesan(props) {
 
   function openModal() {
     setIsOpen(true);
+  }
+
+  const [modalPosition, setModalPosition] = useState(0);
+  const [formBio, setFormBio] = useState({});
+
+  function handleFormChange(form, field, content) {
+    switch (form) {
+      case "bio":
+        const currForm = formBio;
+        currForm[field] = content;
+        setFormBio(formBio);
+
+        return;
+
+      default:
+        return;
+    }
+  }
+
+  function handleModalPrev() {
+    if (modalPosition === 0) {
+      return;
+    }
+    console.log(modalPosition);
+
+    setModalPosition(modalPosition - 1);
+  }
+
+  function handleModalNext() {
+    if (modalPosition === 3) {
+      return;
+    }
+    console.log(modalPosition);
+
+    setModalPosition(modalPosition + 1);
   }
 
   return (
@@ -44,23 +80,36 @@ function pesan(props) {
           </div>
           <h2 className="heading-serif">Mari Berkenalan!</h2>
           <form>
-            <div className="modal-input-row">
-              <p>Nama Pemesan:</p>
-              <input name="name" placeholder="Nama Anda di sini" />
-            </div>
-            <div className="modal-input-row">
-              <p>Email:</p>
-              <input name="name" placeholder="Email Anda di sini" />
-            </div>
-            <div className="modal-input-row">
-              <p>Nomor Whatsapp:</p>
-              <input name="name" placeholder="0852xxxxxxxx" />
-            </div>
+            <FormRow
+              label="Nama Pemesan"
+              placeholder="Nama Anda di sini"
+              handleFormChange={handleFormChange}
+              form="bio"
+              field="name"
+            />
+            <FormRow
+              label="Email"
+              placeholder="Email Anda di sini"
+              handleFormChange={handleFormChange}
+              form="bio"
+              field="email"
+            />
+            <FormRow
+              label="Nomor Whatsapp"
+              placeholder="0852xxxxxxxx"
+              handleFormChange={handleFormChange}
+              form="bio"
+              field="whatsapp"
+            />
           </form>
 
           <div className="modal-nav">
-            <button className="modal-nav-prev">Kembali</button>
-            <button className="modal-nav-next">Lanjut</button>
+            <button className="modal-nav-prev" onClick={handleModalPrev}>
+              Kembali
+            </button>
+            <button className="modal-nav-next" onClick={handleModalNext}>
+              {modalPosition === 3 ? "Lanjut" : "Kirim"}
+            </button>
           </div>
         </div>
       </Modal>
