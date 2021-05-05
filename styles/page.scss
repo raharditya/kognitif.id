@@ -1,0 +1,90 @@
+$THEME-BG: #eff8ff;
+$MAIN-COLOR: #8370ed;
+$HEADING-COLOR: #2f2563;
+$NAVBAR-ACTIVE: #0c87a3;
+$TEXT-BLACK: #3a3939;
+$FADED-TEXT: #6e6e6e;
+$PLACEHOLDER: #c4c4c4;
+$FOOTER-COPYRIGHT: #e5f2fc;
+$SUB-TITLE: #17627a;
+$BLUE: #8370ed;
+
+.page-main-container {
+  background-color: $THEME-BG;
+
+  .page-article-main-container {
+    max-width: 80%;
+    padding-bottom: 4rem;
+    margin: 0 auto;
+    background-color: $THEME-BG;
+
+    .page-article-container {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      margin-bottom: 5rem;
+      width: 1280px;
+      max-width: 100%;
+      height: 1600px;
+      justify-content: center;
+      flex-grow: 1;
+      border-radius: 7px;
+      background-color: white;
+      box-shadow: 0px 0px 15px rgba(20, 20, 20, 0.05);
+
+      .article-cover {
+        flex: 1;
+        width: 100%;
+        height: 40%;
+        background-color: $PLACEHOLDER;
+        border-radius: 7px;
+      }
+
+      .article-date {
+        position: relative;
+        z-index: 10;
+        top: -20px;
+        margin: 0 70% 0 10%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 3px solid #ffffff;
+        background: teal;
+        color: white;
+        text-align: center;
+        border-radius: 30px;
+
+        .date-props {
+          font-size: 15.5px;
+        }
+      }
+
+      .article-content {
+        flex: 3;
+
+        h1 {
+          padding: 30px 30px 0px 30px;
+          margin-left: 6rem;
+          margin-right: 6rem;
+          font-size: 52px;
+        }
+
+        p {
+          padding: 0px 30px 30px 30px;
+          margin-left: 6rem;
+          margin-right: 6rem;
+          font-size: 18px;
+          text-align: justify;
+          text-justify: inter-word;
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
+
+        .article-image {
+          width: 100%;
+          height: 500px;
+          background-color: $PLACEHOLDER;
+        }
+      }
+    }
+  }
+}
