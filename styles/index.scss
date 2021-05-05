@@ -183,7 +183,7 @@ $SUB-TITLE: #17627a;
     #parent:hover .portfolio-prop{
       visibility: visible;
       transform: scale(1);
-      transition: transform 300ms;
+      transition: transform 300ms ease;
     }
     
     .portfolio-link-container{

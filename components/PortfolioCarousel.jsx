@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Slider from "react-slick";
 import Image from 'next/image';
-import { FaAngleLeft, FaAngleRight, FaArrowRight, FaTruckLoading} from "react-icons/fa";
+import { FaAngleLeft, FaAngleRight, FaArrowRight} from "react-icons/fa";
 
 const images = [
   {
