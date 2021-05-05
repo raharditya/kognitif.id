@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 function PortfolioItem(props) {
   return (
@@ -8,18 +9,21 @@ function PortfolioItem(props) {
         </div>
         <div className="item-date">
             <h1 className="date-prop">
-                March 2020
+                {props.portfolioDate}
             </h1>
         </div>
         <div className="item-desc">
-            <a className="item-title" href="/">The Last Land Project</a>
+            <Link href={props.portfolioLink}>
+                <a className="item-title">{props.portfolioTitle}t</a>
+            </Link>
             <p className="item-detail">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                {props.portfolioDesc}
             </p>
-            <a className="item-read-more">
-                <a className="read-more-text" href="/" >Pelajari Lebih lanjut — </a>
-            </a>
+            <Link href={props.portfolioLink}>
+                <a className="item-read-more">
+                    <a className="read-more-text" href="/" >Pelajari Lebih lanjut — </a>
+                </a> 
+            </Link>
         </div>
     </div>
   );

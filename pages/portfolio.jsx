@@ -23,12 +23,42 @@ function portfolio (props) {
                 </header>
 
                 <div className="article-container">
-                    <PortfolioItem />
-                    <PortfolioItem />
-                    <PortfolioItem />
-                    <PortfolioItem />
-                    <PortfolioItem />
-                    <PortfolioItem />
+                    <PortfolioItem 
+                        portfolioDate= "March 2020"
+                        portfolioTitle= "The Paul Project"
+                        portfolioDesc= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                        portfolioLink="/pesan"
+                    />
+                     <PortfolioItem 
+                        portfolioDate= "May 2020"
+                        portfolioTitle= "The Drinko Drink"
+                        portfolioDesc= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                        portfolioLink="/pesan"
+                    />
+                     <PortfolioItem 
+                        portfolioDate= "March 2020"
+                        portfolioTitle= "The Paul Project"
+                        portfolioDesc= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                        portfolioLink="/pesan"
+                    />
+                    <PortfolioItem 
+                        portfolioDate= "March 2020"
+                        portfolioTitle= "The Paul Project"
+                        portfolioDesc= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                        portfolioLink="/pesan"
+                    />
+                     <PortfolioItem 
+                        portfolioDate= "March 2020"
+                        portfolioTitle= "The Paul Project"
+                        portfolioDesc= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                        portfolioLink="/pesan"
+                    />
+                     <PortfolioItem 
+                        portfolioDate= "March 2020"
+                        portfolioTitle= "The Paul Project"
+                        portfolioDesc= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                        portfolioLink="/pesan"
+                    />
                 </div>
             </div>
         </div>
