@@ -10,51 +10,6 @@ $SUB-TITLE: #17627a;
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
-.App {
-  margin: auto;
-}
-
-.slide img {
-  width: 20rem;
-  margin: 0 auto;
-}
-
-.slide {
-  transform: scale(0.2);
-  transition: transform 300ms;
-  opacity: 0.5;
-}
-
-.activeSlide {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.arrow {
-  background-color: #fff;
-  position: absolute;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.arrow svg {
-  transition: color 300ms;
-}
-
-.arrow svg:hover {
-  color: #68edff;
-}
-
-.next {
-  right: 0%;
-  top: 50%;
-}
-
-.prev {
-  left: 0%;
-  top: 50%;
-}
-
 .main-title {
   font-size: 41.71px;
 }
@@ -161,8 +116,8 @@ $SUB-TITLE: #17627a;
   }
 
   .portfolio-section {
-    margin: auto;
-    padding: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 
     .App {
       margin: auto;
@@ -174,7 +129,7 @@ $SUB-TITLE: #17627a;
     }
 
     .slide {
-      transform: scale(0.2);
+      transform: scale(0.4);
       transition: transform 300ms;
       opacity: 0.5;
     }
@@ -191,6 +146,10 @@ $SUB-TITLE: #17627a;
     }
 
     .arrow {
+      height: 2rem;
+      width: 2rem;
+      border-radius: 50%;
+      box-shadow: 0px 0px 10px rgba(20, 20, 20, 0.185);
       background-color: #fff;
       position: absolute;
       cursor: pointer;
@@ -198,6 +157,8 @@ $SUB-TITLE: #17627a;
     }
 
     .arrow svg {
+      margin-left: 0.5rem;
+      margin-top: 0.5rem;
       transition: color 300ms;
     }
 
@@ -213,6 +174,68 @@ $SUB-TITLE: #17627a;
     .prev {
       left: 0%;
       top: 50%;
+    }
+
+    .img-prop {
+      border-radius: 15px;
+    }
+
+    #parent .portfolio-prop {
+      visibility: hidden;
+      transform: scale(0.4);
+      transition: transform 300ms;
+    }
+
+    #parent:hover .portfolio-prop {
+      visibility: visible;
+      transform: scale(1);
+      transition: transform 300ms ease;
+    }
+
+    .portfolio-link-container {
+      display: block;
+      position: absolute;
+      left: 0rem;
+      right: 0rem;
+      width: 80%;
+      margin: -22rem auto 0rem auto;
+      z-index: 20;
+
+      .portfolio-prop {
+        visibility: visible;
+        display: block;
+        border-radius: 15px;
+        padding: 1rem;
+        position: relative;
+        background-color: white;
+        margin: 15.1rem auto auto auto;
+        height: 7rem;
+        width: 100%;
+        z-index: 25;
+        box-shadow: 0px 0px 10px rgba(20, 20, 20, 0.185);
+
+        .portfolio-link-prop {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .portfolio-link-prop h1 {
+            flex: 2;
+          }
+
+          .portfolio-link-prop a {
+            flex: 1;
+          }
+
+          .portfolio-link-prop {
+            background-color: #fff;
+          }
+
+          .portfolio-link-prop a svg:hover {
+            color: $MAIN-COLOR;
+          }
+        }
+      }
     }
   }
 
@@ -335,6 +358,56 @@ $SUB-TITLE: #17627a;
         transform: scale(1);
         opacity: 1;
         margin: auto auto auto -1.5rem;
+      }
+
+      .portfolio-link-prop h1 {
+        flex: 2;
+        font-size: 12px;
+      }
+
+      .portfolio-link-container {
+        display: block;
+        position: absolute;
+        left: -0.3rem;
+        right: 1rem;
+        width: 150%;
+        margin: -22rem auto 0rem auto;
+        z-index: 20;
+
+        .portfolio-prop {
+          visibility: visible;
+          display: block;
+          border-radius: 15px;
+          padding: 1rem;
+          position: relative;
+          background-color: white;
+          margin: 17.1rem auto auto auto;
+          height: 5rem;
+          width: 100%;
+          z-index: 25;
+          box-shadow: 0px 0px 10px rgba(20, 20, 20, 0.185);
+
+          .portfolio-link-prop {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .portfolio-link-prop a {
+              flex: 1;
+            }
+
+            .portfolio-link-prop {
+              background-color: #fff;
+            }
+
+            .portfolio-link-prop a svg:hover {
+              color: $MAIN-COLOR;
+            }
+          }
+        }
+        .portfolio-prop p {
+          display: none;
+        }
       }
     }
 

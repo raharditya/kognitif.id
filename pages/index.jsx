@@ -27,7 +27,7 @@ export default function Home() {
               We’ve got a vast code base of modules and ready-made solutions
               that speed up the development process and cut your expenses.
             </p>
-            <Link href="/portofolio">
+            <Link href="/portfolio">
               <a className="heading-bold btn-secondary">Lihat Portofolio</a>
             </Link>
             <Link href="/pesan">

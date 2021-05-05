@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Slider from "react-slick";
 import Image from 'next/image';
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { FaAngleLeft, FaAngleRight, FaArrowRight} from "react-icons/fa";
 
 const images = [
   {
@@ -10,6 +10,9 @@ const images = [
     caption:"",
     header:"",
     key:"1",
+    title:"Pizza Hut Delivery",
+    desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    url: "/pesan",
   },
   {
     src:"/assets/astronaut.png",
@@ -17,6 +20,9 @@ const images = [
     caption:"",
     header:"",
     key:"2",
+    title: "Manggon Website",
+    desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    url:"/about",
   },
   {
     src:"/assets/celebrating.png",
@@ -24,6 +30,8 @@ const images = [
     caption:"",
     header:"",
     key:"3",
+    title: "Mangga drink",
+    desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     src:"/assets/education.png",
@@ -31,6 +39,8 @@ const images = [
     caption:"",
     header:"",
     key:"4",
+    title: "Rfuel App",
+    desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     src:"/assets/taken.png",
@@ -38,6 +48,17 @@ const images = [
     caption:"",
     header:"",
     key:"5",
+    title: "Shopee Cart",
+    desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  },
+  {
+    src:"/assets/food.jpg",
+    alt:"portfolio_6",
+    caption:"",
+    header:"",
+    key:"6",
+    title: "Food Heist",
+    desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
 ];
 
@@ -45,7 +66,7 @@ function PortfolioCarousel(props) {
   const NextArrow = ({ onClick }) => {
     return (
       <div className="arrow next" onClick={onClick}>
-        <FaArrowRight />
+        <FaAngleRight />
       </div>
     );
   };
@@ -53,7 +74,7 @@ function PortfolioCarousel(props) {
   const PrevArrow = ({ onClick }) => {
     return (
       <div className="arrow prev" onClick={onClick}>
-        <FaArrowLeft />
+        <FaAngleLeft />
       </div>
     );
   };
@@ -61,6 +82,7 @@ function PortfolioCarousel(props) {
   const [imageIndex, setImageIndex] = useState(0);
 
   const settings = {
+    dots: true,
     infinite: true,
     lazyLoad: true,
     speed: 300,
@@ -77,7 +99,19 @@ function PortfolioCarousel(props) {
       <Slider {...settings}>
         {images.map((img, idx) => (
           <div className={idx === imageIndex ? "slide activeSlide" : "slide"}>
-            <img src={img.src} alt=""/>
+            <img key={img.key} className="img-prop" 
+            src={img.src} alt=""/>
+            <div id="parent" className="portfolio-link-container">
+              <div className="portfolio-prop">
+                <div className="portfolio-link-prop">
+                  <h1 style={{fontSize: `16px`}}>{img.title}</h1>
+                  <a href={img.url}>
+                    <FaArrowRight />
+                  </a>
+                </div>
+                <p style={{fontSize: `14px`}}>{img.desc}</p>
+              </div>
+            </div>
           </div>
         ))}
       </Slider>
