@@ -8,7 +8,9 @@ import FaqContent from "../components/FaqContent";
 import FaqTitle from "../components/FaqTitle";
 import BottomCta from "../components/BottomCta";
 import PackageItem from "../components/PackageItem";
-import FormRow from "../components/FormRow";
+import OrderForm1 from "../components/orderForm/orderForm1";
+import OrderForm2 from "../components/orderForm/orderForm2";
+import OrderFormConfirm from "../components/orderForm/OrderFormConfirm";
 
 function pesan(props) {
   const [modalIsOpen, setIsOpen] = useState(true);
@@ -78,37 +80,25 @@ function pesan(props) {
             <p className="form-progress-item">Deskripsi Isi</p>
             <p className="form-progress-item">Verifikasi</p>
           </div>
-          <h2 className="heading-serif">Mari Berkenalan!</h2>
-          <form>
-            <FormRow
-              label="Nama Pemesan"
-              placeholder="Nama Anda di sini"
-              handleFormChange={handleFormChange}
-              form="bio"
-              field="name"
-            />
-            <FormRow
-              label="Email"
-              placeholder="Email Anda di sini"
-              handleFormChange={handleFormChange}
-              form="bio"
-              field="email"
-            />
-            <FormRow
-              label="Nomor Whatsapp"
-              placeholder="0852xxxxxxxx"
-              handleFormChange={handleFormChange}
-              form="bio"
-              field="whatsapp"
-            />
-          </form>
+
+          {modalPosition === 0 ? (
+            <></>
+          ) : modalPosition === 1 ? (
+            <OrderForm1 handleFormChange={handleFormChange} />
+          ) : modalPosition === 2 ? (
+            <OrderForm2 handleFormChange={handleFormChange} />
+          ) : modalPosition === 3 ? (
+            <OrderFormConfirm />
+          ) : (
+            <p>Test</p>
+          )}
 
           <div className="modal-nav">
             <button className="modal-nav-prev" onClick={handleModalPrev}>
               Kembali
             </button>
             <button className="modal-nav-next" onClick={handleModalNext}>
-              {modalPosition === 3 ? "Lanjut" : "Kirim"}
+              {modalPosition === 3 ? "Kirim" : "Lanjut"}
             </button>
           </div>
         </div>
