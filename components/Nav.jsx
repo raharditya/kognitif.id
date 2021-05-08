@@ -21,7 +21,7 @@ function Nav(props) {
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/portofolio">
                 <a>Portofolio</a>
               </Link>
             </li>
@@ -31,12 +31,12 @@ function Nav(props) {
               </Link>
             </li>
             <li>
-              <Link href="/about">
+              <Link href="/tentang-kami">
                 <a>Tentang Kami</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/kontak-kami">
                 <a>Kontak</a>
               </Link>
             </li>
