@@ -7,6 +7,7 @@ export default function FormRow(props) {
       {!props.isTextArea ? (
         <input
           name={props.field}
+          required
           type={
             props.field === "name"
               ? "name"
@@ -22,6 +23,7 @@ export default function FormRow(props) {
       ) : (
         <textarea
           placeholder={props.placeholder}
+          required
           rows="10"
           onChange={(e) =>
             props.handleFormChange(props.form, props.field, e.target.value)
