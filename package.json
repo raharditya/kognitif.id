@@ -16,6 +16,7 @@
     "react-icons": "^4.2.0",
     "react-modal": "^3.13.1",
     "react-slick": "^0.28.1",
+    "react-whatsapp-widget": "git+https://github.com/Asebodi/react-whatsapp-widget.git",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
