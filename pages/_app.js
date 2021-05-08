@@ -14,6 +14,8 @@ import WhatsAppWidget from "react-whatsapp-widget";
 import "react-whatsapp-widget/dist/index.css";
 
 function MyApp({ Component, pageProps }) {
+  const test = "Hello";
+
   return (
     <>
       <Nav />
