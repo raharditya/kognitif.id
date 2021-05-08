@@ -128,6 +128,49 @@ a {
   }
 }
 
+.input-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid #eff8ff;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  p {
+    width: 30%;
+    text-align: start;
+  }
+
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    height: 2.2rem;
+    border: 1px solid #c1c1c1;
+    border-radius: 10px;
+    background-color: #fbfbfb;
+    transition: background-color 150ms ease-in-out;
+    padding: 0 1rem;
+
+    &:focus {
+      background-color: white;
+      border: 2px solid #cf8a8a;
+      outline: none;
+    }
+  }
+
+  textarea {
+    resize: vertical;
+    height: auto;
+    padding: 1rem;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   // .page-container {
   //   max-width: 90%;
