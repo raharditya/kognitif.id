@@ -174,16 +174,15 @@ $SUB-TITLE: #17627a;
       border-radius: 15px;
     }
 
-    #parent .portfolio-prop {
+    #parent .portfolio-prop{
       visibility: hidden;
-      transform: scale(0.4);
-      transition: transform 300ms;
+      transform: scale(0.001);
+      transition: 300ms ease;
     }
 
     #parent:hover .portfolio-prop {
       visibility: visible;
       transform: scale(1);
-      transition: transform 300ms ease;
     }
 
     .portfolio-link-container {
@@ -194,6 +193,7 @@ $SUB-TITLE: #17627a;
       width: 80%;
       margin: -22rem auto 0rem auto;
       z-index: 20;
+      transition: transform 300ms ease;
 
       .portfolio-prop {
         visibility: visible;
